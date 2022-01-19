@@ -5,9 +5,6 @@ import "../App.css";
 // refresh token
 import { refreshTokenSetup } from "../utils/refreshToken";
 
-// const clientId =
-//   "707788443358-u05p46nssla3l8tmn58tpo9r5sommgks.apps.googleusercontent.com";
-// const clientId = AIzaSyDn3oRtrEGpUB - WIpvGyTE5WhI9o0zpj3I;
 const clientId =
   "907542318272-1g801951fo18ic65g0et2qhceggc76ms.apps.googleusercontent.com";
 
@@ -31,8 +28,6 @@ export const LoginHooks = () => {
     clientId,
     isSignedIn: true,
     accessType: "offline",
-    // responseType: 'code',
-    // prompt: 'consent',
   });
   console.log("Token:", token);
   return (
