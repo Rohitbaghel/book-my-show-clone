@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
+
 import { GoChevronRight } from 'react-icons/go'
 import { BiSearch, BiMenu, BiChevronDown } from 'react-icons/bi'
+import Modal from 'react-modal'
 
+Modal.setAppElement('#root')
 const NavSm = () => {
   return (
     <>
@@ -32,9 +35,107 @@ const NavMd = () => {
     </div>
   )
 }
-const NavLg = () => {
+const NavLg=() => {
+  const [isModelOpen, setIsModelOpen]=useState(false)
+  const [locations, setLocations]=useState('')
+  const [value, setValue]=useState('')
   return (
     <>
+      
+      <Modal isOpen={isModelOpen} onRequestClose={() => {
+              setIsModelOpen(false)
+      }}>
+        <div className='bg-white border 3/5 '>
+          <input
+            type='text'
+            placeholder='Search for Your City'
+            className='w-4/5 h-10 border'
+            value={value} onChange={ (e) => setValue(e.target.value)}
+          />
+          <button className='w-1/12 rounded-lg border-4 h-10 text-lg font-bold hover:bg-red-600' onClick={() => setLocations(value)}>
+            Submit
+          </button>
+          <p className='text-center'>Popular Cities</p>
+          <div className='flex gap-2 '>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png'
+                alt=''
+              />
+              <p className='text-center text-slate-800 font-bold'>Mumbai</p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/ncr.png'
+                alt=''
+                className='w-24 -mt-2 ml-4'
+              />
+              <p className='text-center text-slate-800 font-bold -ml-4 mt-1'>
+                NCR
+              </p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/bang.png'
+                alt=''
+              />
+              <p className='text-center text-slate-800 font-bold'>Bengaluru</p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/hyd.png'
+                alt=''
+                className='w-24 -mt-4 ml-4'
+              />
+              <p className='text-center text-slate-800 font-bold'>Hyderabad</p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/ahd.png'
+                alt=''
+              />
+              <p className='text-center text-slate-800 font-bold'>Ahmedabad</p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/chd.png'
+                alt=''
+                className='w-28  ml-4'
+              />
+              <p className='text-center text-slate-800 font-bold'>Chandigarh</p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/chen.png'
+                alt=''
+                className='w-28 -mt-2 ml-4'
+              />
+              <p className='text-center text-slate-800 font-bold'>Chennai</p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/pune.png'
+                alt=''
+              />
+              <p className='text-center text-slate-800 font-bold'>Pune</p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/kolk.png'
+                alt=''
+              />
+              <p className='text-center text-slate-800 font-bold'>Kolkata</p>
+            </div>
+            <div className='w-1/6 '>
+              <img
+                src='https://in.bmscdn.com/m6/images/common-modules/regions/koch.png'
+                alt=''
+              />
+              <p className='text-center text-slate-800 font-bold'>Kochi</p>
+            </div>
+          </div>
+              </div>
+              </Modal>
       <div className='container mx-auto px-4 flex items-center justify-between bg-black '>
         <div className='flex items-center w-1/2 gap-3'>
           <div className='w-12 h-12'>
@@ -50,12 +151,15 @@ const NavLg = () => {
               type='search'
               className='w-full bg-transparent border-none focus:outline-none'
               placeholder='Search for movies, events, Plays, Sports and Activities.'
+            
             />
           </div>
         </div>
         <div className='flex items-center gap-3'>
-          <span className='text-gray-200 text-xs flex items-center cursor-pointer hover:text-white'>
-            Bengaluru <BiChevronDown />
+          <span className='text-gray-200 text-xs flex items-center cursor-pointer hover:text-white' onClick={() => {
+            setIsModelOpen(true)
+          }}>
+            {locations==='' ? 'Location' : locations} <BiChevronDown />
           </span>
           <button className='bg-red-600 text-white px-2 py-1 text-sm rounded'>
             Sign in

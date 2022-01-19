@@ -6,15 +6,16 @@ import Navbar from './components/navbar.components';
 import Location from './components/Location';
 
 
+
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home/>
-      <Footer/>
       {/* <Home/> */}
-      {/* <Navbar /> */}
-     <Location/>
+      {/* <Footer/> */}
+    
+   
+  
   {/* <Footer/> */}
     </div>
   );
