@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./RecomendedMoviesHome.css";
 import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
+
 export const RecomendedMoviesHome = () => {
     const refDivLast = useRef();
     const refDivFirst = useRef();
