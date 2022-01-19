@@ -1,92 +1,111 @@
-import React from "react";
-import {GoChevronRight} from "react-icons/go";
-import {BiSearch, BiMenu, BiChevronDown} from "react-icons/bi";
+import React from 'react'
+import { GoChevronRight } from 'react-icons/go'
+import { BiSearch, BiMenu, BiChevronDown } from 'react-icons/bi'
 
 const NavSm = () => {
   return (
     <>
-      <div className="text-white flex items-center justify-between ">
+      <div className='text-white flex items-center justify-between '>
         <div>
-          <h3 className="text-xl font-bold">It All starts Here!</h3>
-          <span className="text-gray-400 text-xs flex items-center">
-             Idukki<GoChevronRight />
+          <h3 className='text-xl font-bold'>It All starts Here!</h3>
+          <span className='text-gray-400 text-xs flex items-center'>
+            Idukki
+            <GoChevronRight />
           </span>
         </div>
-        <div className="w-8 h-8">
-          <BiSearch className="w-full h-full" />
+        <div className='w-8 h-8'>
+          <BiSearch className='w-full h-full' />
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 const NavMd = () => {
   return (
-    <div className="w-full flex items-center gap-3  px-3 py-2 rounded-md bg-red">
-      <BiSearch className=""/>
+    <div className='w-full flex items-center gap-3  px-3 py-2 rounded-md bg-red'>
+      <BiSearch className='' />
       <input
-        type="search"
-        className="w-full bg-transparent border-none focus:outline"
-        placeholder="Search for movies, events, Plays, Sports and Activities."
+        type='search'
+        className='w-full bg-transparent border-none focus:outline'
+        placeholder='Search for movies, events, Plays, Sports and Activities.'
       />
     </div>
-  );
-};
+  )
+}
 const NavLg = () => {
   return (
     <>
-      <div className="container mx-auto px-4 flex items-center justify-between bg-black">
-        <div className="flex items-center w-1/2 gap-3">
-          <div className="w-12 h-12">
+      <div className='container mx-auto px-4 flex items-center justify-between bg-black '>
+        <div className='flex items-center w-1/2 gap-3'>
+          <div className='w-12 h-12'>
             <img
-              src="https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png"
-              alt="logo"
-              className="w-full h-full"
+              src='https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png'
+              alt='logo'
+              className='w-full h-full'
             />
           </div>
-          <div className="w-full flex items-center gap-3 bg-white px-3 py-2 rounded-md">
+          <div className='w-full flex items-center gap-3 bg-white px-3 py-2 rounded-md'>
             <BiSearch />
             <input
-              type="search"
-              className="w-full bg-transparent border-none focus:outline-none"
-              placeholder="Search for movies, events, Plays, Sports and Activities."
+              type='search'
+              className='w-full bg-transparent border-none focus:outline-none'
+              placeholder='Search for movies, events, Plays, Sports and Activities.'
             />
           </div>
         </div>
-        <div className="flex items-center gap-3">
-          <span className="text-gray-200 text-xs flex items-center cursor-pointer hover:text-white">
+        <div className='flex items-center gap-3'>
+          <span className='text-gray-200 text-xs flex items-center cursor-pointer hover:text-white'>
             Bengaluru <BiChevronDown />
           </span>
-          <button className="bg-red-600 text-white px-2 py-1 text-sm rounded">
+          <button className='bg-red-600 text-white px-2 py-1 text-sm rounded'>
             Sign in
           </button>
-          <div className="w-8 h-8 text-white">
-            <BiMenu className="w-full h-full" />
+          <div className='w-8 h-8 text-white'>
+            <BiMenu className='w-full h-full' />
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-bms-700 p-4">
-        <div className="md:hidden">
+      <nav className='bg-bms-700 p-4'>
+        <div className='md:hidden'>
           {/* Mobile screen */}
           <NavSm />
         </div>
-        <div className="hidden md:flex lg:hidden">
+        <div className='hidden md:flex lg:hidden'>
           {/* Medium/Tab screen */}
           <NavMd />
         </div>
-        <div className="hidden w-full lg:flex">
+        <div className='hidden w-full lg:flex'>
           {/* Large screen */}
           <NavLg />
         </div>
+        <div className='flex justify-between bg-black text-white'>
+          <div className='flex gap-2'>
+            <div>Movie</div>
+            <div>Stream</div>
+            <div>Events</div>
+            <div>Plays</div>
+            <div>Sports</div>
+            <div>Activities</div>
+            <div>Buzz</div>
+          </div>
+      
+          <div className='flex gap-2'>
+            <div>ListYourShow</div>
+            <div>Corporates</div>
+            <div>Offers</div>
+            <div>Gift Cards</div>
+            </div>
+        </div>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

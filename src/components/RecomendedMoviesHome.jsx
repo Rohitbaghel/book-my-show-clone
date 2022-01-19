@@ -9,6 +9,7 @@ export const RecomendedMoviesHome = () => {
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
         refDivFirst.current.scrollIntoView();
+        
         setFlag1(true);
         setFlag2(false);
     }
