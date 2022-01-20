@@ -3,6 +3,7 @@ import "./ScrollingGrid.css";
 import "./RecommendedMoviesHome.css";
 import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
+
 export const RecomendedMoviesHome = () => {
     const refDivLast = useRef();
     const refDivFirst = useRef();
@@ -10,6 +11,7 @@ export const RecomendedMoviesHome = () => {
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
         refDivFirst.current.scrollIntoView();
+        
         setFlag1(true);
         setFlag2(false);
     }

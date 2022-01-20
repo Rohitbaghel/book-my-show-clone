@@ -18,6 +18,6 @@ app.use("/foods", foodController);
 app.use("/latests", latestPlayController);
 app.use("/laughters", laughterController);
 app.use("/outdoor-events", outdoorEventController);
-app.use("/popular", popularEventController);
+app.use("/populars", popularEventController);
 
 module.exports = app;
