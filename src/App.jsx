@@ -9,9 +9,9 @@ import { Logout } from "./components/Logout";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar />
-      <Home/>
-      <Footer/> */}
+ <Navbar />
+      {/* <Home/> */}
+      {/* <Footer/>  */}
       {/* <Login /> */}
       {/* <Logout /> */}
       <Movies />
