@@ -35,3 +35,35 @@
   left: 3.3vw;
   cursor: pointer;
 }
+
+#rightArrow1 {
+  font-size: 45px;
+  position: absolute;
+  top: 138vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow1 {
+  font-size: 45px;
+  position: absolute;
+  top: 138vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow2 {
+  font-size: 45px;
+  position: absolute;
+  top: 234vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow2 {
+  font-size: 45px;
+  position: absolute;
+  top: 234vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
