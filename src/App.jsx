@@ -12,8 +12,8 @@ function App() {
       {/* <Navbar />
       <Home/>
       <Footer/> */}
-      {/* <Login />
-      <Logout /> */}
+      {/* <Login /> */}
+      {/* <Logout /> */}
       <Movies />
     </div>
   );
