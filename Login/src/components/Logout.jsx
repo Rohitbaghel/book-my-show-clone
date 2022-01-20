@@ -1,11 +1,11 @@
 import React from "react";
 import { useGoogleLogout } from "react-google-login";
-import "../App.css";
+import "./Login.css";
 
 const clientId =
   "907542318272-1g801951fo18ic65g0et2qhceggc76ms.apps.googleusercontent.com";
 
-export const LogoutHooks = () => {
+export const Logout = () => {
   const onLogoutSuccess = (res) => {
     console.log("Logged out Successfully ");
     alert("Logged out Successfully ✌");

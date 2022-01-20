@@ -1,16 +1,15 @@
 import React from "react";
 import "./App.css";
-// import Login from "./components/Login";
-// import Logout from "./components/Logout";
-import { LoginHooks } from "./components/LoginHooks";
-import { LogoutHooks } from "./components/LogoutHooks";
+
+import { Login } from "./components/Login";
+import { Logout } from "./components/Logout";
 
 function App() {
   return (
     <div className="App">
       {/* <h2>Login</h2> */}
-      <LoginHooks />
-      <LogoutHooks />
+      <Login />
+      <Logout />
       <br />
     </div>
   );
