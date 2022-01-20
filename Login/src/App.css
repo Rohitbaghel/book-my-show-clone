@@ -33,21 +33,4 @@
   left: 30px;
   align-items: center;
 }
-.googleLogin {
-  display: flex;
-  width: 60%;
-  margin: auto;
-  border: 1px solid #efebe9;
-}
-.googleLogin :hover {
-  background-color: #cfd8dc;
-  color: #424242;
-  border: none;
-}
-.loginWithNumber {
-  width: 100%;
-  display: flex;
-  grid-gap: 1%;
-  margin: auto;
-  justify-content: center;
-}
+
