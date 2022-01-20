@@ -3,6 +3,7 @@ import './App.css';
 import { Home } from './components/Home';
 import Footer from './components/Footer';
 import Navbar from './components/navbar.components';
+import {Movies} from './components/Movies';
 
 
 
@@ -10,9 +11,10 @@ import Navbar from './components/navbar.components';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar />
       <Home/>
-      <Footer/>
+      <Footer/> */}
+      <Movies/>
     
    
   
