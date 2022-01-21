@@ -20,6 +20,7 @@ export const Cinema = () => {
       console.log("error:", err);
     }
   };
+  
 
   useEffect(() => {
     getCinemaTime();
@@ -27,10 +28,13 @@ export const Cinema = () => {
   console.log("Data", cinemaTime);
   return (
     <div className="cinemaContainer">
+      {/* <Navbar /> */}
       <div className="navbar">
         <Navbar />
       </div>
-      <div className="moviesContainer"> </div>
+      <div className="moviesContainer">
+
+      </div>
       <div className="banner">
         <div className=" ticket">
           <h1>
