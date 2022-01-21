@@ -5,16 +5,18 @@ import Navbar from "./components/navbar.components";
 import { Movies } from "./components/Movies";
 import { Login } from "./components/Login";
 import { Logout } from "./components/Logout";
+import {ProductDetails} from "./components/ProductDetails";
 
 function App() {
   return (
     <div className="App">
- <Navbar />
+ {/* <Navbar /> */}
       {/* <Home/> */}
       {/* <Footer/>  */}
       {/* <Login /> */}
       {/* <Logout /> */}
-      <Movies />
+      {/* <Movies /> */}
+      <ProductDetails/>
     </div>
   );
 }
