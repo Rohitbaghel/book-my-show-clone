@@ -6,19 +6,22 @@ import { Movies } from "./components/Movies";
 import { Login } from "./components/Login";
 import { Logout } from "./components/Logout";
 import { ProductDetails } from "./components/ProductDetails";
-import { Cinema } from "./components/Cinema";
+import {Cinema} from "./components/Cinema";
+
+
 
 function App() {
   return (
     <div className="App">
 
+    
       {/* <Navbar /> */}
       {/* <Home/> */}
       {/* <Footer/>  */}
       {/* <Login /> */}
       {/* <Logout /> */}
       {/* <Movies /> */}
-      {/* <ProductDetails /> */}
+      <ProductDetails />
       <Cinema />
 
     </div>
