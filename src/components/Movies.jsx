@@ -111,7 +111,7 @@ export const Movies=() => {
                     {data.map(({cover_image_url,movie_name,movie_grade,languages,_id}) => {
                         return (
                             <div className='rounded-2xl border-2 border-white' key={_id}>
-                                <img src={cover_image_url} alt="" className='h-56' />
+                                <img src={cover_image_url} alt="" className='h-56 object-cover' />
                                 <p className='text-left text-xl font-semibold my-4'>{movie_name}</p>
                                 <p className='text-left text-slate-400 my-4'>{movie_grade}</p>
                                 <p className='text-left text-slate-400 my-4'>{languages}</p>
