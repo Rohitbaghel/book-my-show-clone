@@ -1,0 +1,69 @@
+.gridDiv {
+  display: grid;
+  grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+  grid-template-rows: 446px;
+  grid-gap: 1.25%;
+  width: 200%;
+}
+.gridDiv div {
+  cursor: pointer;
+}
+
+.gridDiv img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movieTitle {
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#rightArrow {
+  font-size: 45px;
+  position: absolute;
+  top: 97vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow {
+  font-size: 45px;
+  position: absolute;
+  top: 97vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow1 {
+  font-size: 45px;
+  position: absolute;
+  top: 190vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow1 {
+  font-size: 45px;
+  position: absolute;
+  top: 190vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow2 {
+  font-size: 45px;
+  position: absolute;
+  top: 291vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow2 {
+  font-size: 45px;
+  position: absolute;
+  top: 291vh;
+  left: 3.3vw;
+  cursor: pointer;
+}

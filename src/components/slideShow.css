@@ -1,0 +1,94 @@
+#sliderContainer {
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 1200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 300%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 33.33%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 1200px;
+  height: 300px;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 1200px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  border: 2px solid whitesmoke;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: green;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -33.33%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  margin-top: 260px;
+}
+
+.navigation-auto div {
+  border: 2px solid whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: green;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: green;
+}

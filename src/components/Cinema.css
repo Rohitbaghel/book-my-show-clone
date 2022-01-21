@@ -1,0 +1,64 @@
+.cinemaContainer {
+  margin-top: 0%;
+  width: 100%;
+}
+.banner {
+  margin-left: 5%;
+  padding: 0.6%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  background-color: #ffcc80;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  width: 100%;
+  margin-top: 0%;
+}
+.cinemaName {
+  width: 100%;
+  margin-left: 10%;
+  text-align: left;
+  color: black;
+}
+.ticket {
+  width: 65%;
+  display: flex;
+  grid-gap: 2%;
+}
+.name {
+  width: 100%;
+  display: flex;
+  grid-gap: 3%;
+}
+.name h3 {
+  width: 20%;
+}
+.timings {
+  width: 100%;
+  margin-left: 8%;
+  padding: 1.2%;
+}
+.Teal {
+  width: 20%;
+  color: #5eead4;
+}
+.timings button {
+  padding: 1.5%;
+  margin-top: 0%;
+  border: 1px solid turquoise;
+  margin-left: 5%;
+}
+.ticket h5 {
+  width: 5%;
+  margin-left: 0%;
+}
+.info {
+  width: 10%;
+  display: flex;
+  grid-gap: 2%;
+}
+.footer {
+  width: 100%;
+  margin-top: 2%;
+}
