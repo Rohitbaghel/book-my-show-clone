@@ -23,7 +23,7 @@
 #rightArrow {
   font-size: 45px;
   position: absolute;
-  top: 43vh;
+  top: 97vh;
   left: 92.1vw;
   cursor: pointer;
 }
@@ -31,7 +31,7 @@
 #leftArrow {
   font-size: 45px;
   position: absolute;
-  top: 43vh;
+  top: 97vh;
   left: 3.3vw;
   cursor: pointer;
 }
@@ -39,7 +39,7 @@
 #rightArrow1 {
   font-size: 45px;
   position: absolute;
-  top: 138vh;
+  top: 190vh;
   left: 92.1vw;
   cursor: pointer;
 }
@@ -47,7 +47,7 @@
 #leftArrow1 {
   font-size: 45px;
   position: absolute;
-  top: 138vh;
+  top: 190vh;
   left: 3.3vw;
   cursor: pointer;
 }
@@ -55,7 +55,7 @@
 #rightArrow2 {
   font-size: 45px;
   position: absolute;
-  top: 234vh;
+  top: 291vh;
   left: 92.1vw;
   cursor: pointer;
 }
@@ -63,7 +63,7 @@
 #leftArrow2 {
   font-size: 45px;
   position: absolute;
-  top: 234vh;
+  top: 291vh;
   left: 3.3vw;
   cursor: pointer;
 }

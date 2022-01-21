@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import "./ScrollingGrid.css";
-import "./RecommendedMoviesHome.css";
 import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
 

@@ -1,11 +1,13 @@
 import { RecomendedMoviesHome } from "./RecomendedMoviesHome"
 import { BestofEntertainmentHome } from "./BestofEntertainmentHome";
 import { PremierHome } from "./PremierHome";
+import { Slideshow } from "./slideShow"
 import "./Home.css";
 
 export const Home = () => {
     return (
-    <>    
+    <>
+    <Slideshow/>
     <div id="outer">
     <p id="heading1">Recommended Movies</p>
         <div id="container">
