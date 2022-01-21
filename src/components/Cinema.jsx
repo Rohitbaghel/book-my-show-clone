@@ -5,6 +5,7 @@ import "./Cinema.css";
 import Navbar from "./navbar.components";
 import { AiFillSafetyCertificate, AiOutlineMobile } from "react-icons/ai";
 import { MdOutlineFastfood } from "react-icons/md";
+import Footer from "./Footer";
 
 export const Cinema = () => {
   const [cinemaTime, setCinemaTime] = useState([]);
@@ -95,6 +96,9 @@ export const Cinema = () => {
         )}
       </div>
       <div className="rightCinema"></div>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 };

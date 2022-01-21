@@ -36,8 +36,8 @@
 }
 .timings {
   width: 100%;
-  margin-left: 1%;
-  padding: 1%;
+  margin-left: 8%;
+  padding: 1.2%;
 }
 .Teal {
   width: 20%;
@@ -47,7 +47,7 @@
   padding: 1.5%;
   margin-top: 0%;
   border: 1px solid turquoise;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 .ticket h5 {
   width: 5%;
@@ -57,4 +57,8 @@
   width: 10%;
   display: flex;
   grid-gap: 2%;
+}
+.footer {
+  width: 100%;
+  margin-top: 2%;
 }
