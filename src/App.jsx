@@ -11,6 +11,7 @@ import { Cinema } from "./components/Cinema";
 function App() {
   return (
     <div className="App">
+
       {/* <Navbar /> */}
       {/* <Home/> */}
       {/* <Footer/>  */}
@@ -19,6 +20,7 @@ function App() {
       {/* <Movies /> */}
       {/* <ProductDetails /> */}
       <Cinema />
+
     </div>
   );
 }

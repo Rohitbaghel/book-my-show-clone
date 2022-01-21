@@ -1,3 +1,4 @@
+
 import React, {useEffect, useState} from 'react';
 import {AiOutlineDown, AiOutlineRight} from "react-icons/ai";
 import Modal from 'react-modal'
@@ -120,6 +121,7 @@ export const Movies=() => {
                     })}
                 </div>
                    {/* movies */}
+
             </div>
     </div>
     
