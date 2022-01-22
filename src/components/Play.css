@@ -9,7 +9,7 @@
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .dropdown-content {
@@ -23,8 +23,9 @@
 }
 
 .dropdown:hover .dropdown-content {
-  display: flex;
-  grid-gap: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 1%;
 }
 .dropdown-content button {
   border: none;

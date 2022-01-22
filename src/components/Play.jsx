@@ -33,7 +33,7 @@ export const Play = () => {
           <div className="w-2/6 ">
             <h4 className="text-2xl font-semibold">Filter</h4>
             {/* Language */}
-            <div className="my-10 bg-white px-4">
+            {/* <div className="my-10 bg-white px-4">
               <div className="flex justify-between">
                 <div className="flex">
                   <AiOutlineDown className="mt-3 mr-1 " />
@@ -42,24 +42,25 @@ export const Play = () => {
                 <div className="py-2">Clear</div>
               </div>
               <div className="grid grid-cols-3 gap-3">
-                <div className="border text-red-600 ">English</div>
+                <div className="border text-red-600  ">English</div>
                 <div className="border text-red-600 ">Hindi</div>
                 <div className="border text-red-600 ">English 7D</div>
                 <div className="border text-red-600 ">Malayalam</div>
                 <div className="border text-red-600 ">Punjabi</div>
                 <div className="border text-red-600 ">Telugu</div>
               </div>
-            </div>
+            </div> */}
+
             {/* Language */}
             {/* Generes */}
             <div className="my-10 bg-white px-4">
-              <div className="flex justify-between">
+              {/* <div className="flex justify-between">
                 <div className="flex">
                   <AiOutlineDown className="mt-3 mr-1 " />
                   <p className="text-lg text-red-600 py-2">Generes</p>
                 </div>
                 <div className="py-2">Clear</div>
-              </div>
+              </div> */}
               {/* 
             <div className="grid grid-cols-3 gap-3">
               <div className="border text-red-600 ">Action</div>
@@ -80,15 +81,15 @@ export const Play = () => {
             {/* Generes */}
 
             {/* Format */}
-            <div className="my-10 bg-white px-4">
+            {/* <div className="my-10 bg-white px-4">
               <div className="flex justify-between">
                 <div className="flex">
                   <AiOutlineDown className="mt-3 mr-1 " />
                   <p className="text-lg text-red-600 py-2">Format</p>
                 </div>
                 <div className="py-2">Clear</div>
-              </div>
-              {/* <div className="grid grid-cols-3 gap-3">
+              </div> */}
+            {/* <div className="grid grid-cols-3 gap-3">
               <div className="border text-red-600 ">2D</div>
               <div className="border text-red-600 ">7D</div>
               <div className="border text-red-600 ">3D</div>
@@ -96,18 +97,102 @@ export const Play = () => {
               <div className="border text-red-600 ">IMAX 2D</div>
               <div className="border text-red-600 ">IMAX 3D</div>
             </div> */}
-            </div>
-            <div class="dropdown">
+            {/* </div> */}
+
+            {/* Date  */}
+            <div class="dropdown grid grid-cols-3 gap-3 mt-8 mb-5">
               <span>
                 {" "}
-                <h3 style={{ display: "flex", color: "red" }}>
+                {/* <h3 style={{ display: "flex", color: "red" }}> */}
+                <h3>
+                  Date <AiOutlineDown className=" " />{" "}
+                </h3>
+              </span>
+              <div class="dropdown-content">
+                <button className="border-grey text-red-600">Today</button>
+                <button className="border text-red-600">Tomorrow</button>
+                <button className="border text-red-600">This Weekend</button>
+              </div>
+            </div>
+
+            {/* //languages */}
+            <div class="dropdown grid grid-cols-3 gap-3 mt-8 mb-5">
+              <span>
+                {" "}
+                {/* <h3 style={{ display: "flex", color: "red" }}> */}
+                <h3>
+                  Languages <AiOutlineDown className=" " />{" "}
+                </h3>
+              </span>
+              <div class="dropdown-content">
+                <button className="border-grey text-red-600">English</button>
+                <button className="border text-red-600">Tamil</button>
+                <button className="border text-red-600">Hindi</button>
+                <button className="border text-red-600">Hindustani</button>
+                <button className="border text-red-600">Urdu</button>
+              </div>
+            </div>
+
+            <div class="dropdown grid grid-cols-3 gap-3 mt-12">
+              <span>
+                {" "}
+                {/* <h3 style={{ display: "flex", color: "red" }}> */}
+                <h3>
+                  Categories <AiOutlineDown className=" " />{" "}
+                </h3>
+              </span>
+              <div class="dropdown-content">
+                <button className="border-grey text-red-600">Theatre</button>
+                <button className="border text-red-600">Storytelling</button>
+              </div>
+            </div>
+
+            <div class="dropdown grid grid-cols-3 gap-3 mt-8">
+              <span>
+                {" "}
+                {/* <h3 style={{ display: "flex", color: "red" }}> */}
+                <h3>
+                  Genres <AiOutlineDown className=" " />{" "}
+                </h3>
+              </span>
+              <div class="dropdown-content">
+                <button className="border-grey text-red-600">Comedy</button>
+                <button className="border text-red-600">Drama</button>
+              </div>
+            </div>
+
+            <div class="dropdown grid grid-cols-3 mt-8">
+              <span>
+                {" "}
+                {/* <h3 style={{ display: "flex", color: "red" }}> */}
+                <h3>
+                  More Filter <AiOutlineDown className=" " />{" "}
+                </h3>
+              </span>
+              <div class="dropdown-content">
+                <button className="border-grey text-red-600">
+                  Kids Allowed
+                </button>
+                <button className="border text-red-600">
+                  Online Streaming
+                </button>
+                <button className="border text-red-600">Outdor Event</button>
+              </div>
+            </div>
+
+            <div class="dropdown grid grid-cols-3 gap-3 mt-14 mb-14">
+              <span>
+                {" "}
+                {/* <h3 style={{ display: "flex", color: "red" }}> */}
+                <h3>
                   Price <AiOutlineDown className=" " />{" "}
                 </h3>
               </span>
               <div class="dropdown-content">
-                <button>Free</button>
-                <button>0-500</button>
-                <button>501-200</button>
+                <button className="border-grey text-red-600">Free</button>
+                <button className="border text-red-600">0-500</button>
+                <button className="border text-red-600">501-2000</button>
+                <button className="border text-red-600">Above 2000</button>
               </div>
             </div>
             {/* Format */}
