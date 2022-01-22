@@ -2,6 +2,13 @@ import { RecomendedMoviesHome } from "./RecomendedMoviesHome"
 import { BestofEntertainmentHome } from "./BestofEntertainmentHome";
 import { PremierHome } from "./PremierHome";
 import { Slideshow } from "./slideShow"
+import { EventsNear } from "./nearEventsHome";
+import { OnlineEvents } from "./onlineEventsHome";
+import { OutdoorEvents } from "./outdoorEventsHome"
+import { Laughter } from "./laughterHome";
+import { Popular } from "./popularEventsHome";
+import { TopGames } from "./topGames";
+import { FunActivities } from "./funActivitiesHome";
 import "./Home.css";
 
 export const Home = () => {
@@ -30,6 +37,48 @@ export const Home = () => {
             <PremierHome/>
         </div>
     </div>
+    </div>
+    <div id="outer">
+    <p id="heading1">Events Happening Near You</p>
+        <div id="container">
+            <EventsNear/>
+        </div>
+    </div>
+    <div id="outer">
+    <p id="heading1">Online Streaming Events</p>
+        <div id="container">
+            <OnlineEvents/>
+        </div>
+    </div>
+    <div id="outer">
+    <p id="heading1">Outdoor Events</p>
+        <div id="container">
+            <OutdoorEvents/>
+        </div>
+    </div>
+    <div id="outer">
+    <p id="heading1">Laughter Therapy</p>
+        <div id="container">
+            <Laughter/>
+        </div>
+    </div>
+    <div id="outer">
+    <p id="heading1">Popular Events</p>
+        <div id="container">
+            <Popular/>
+        </div>
+    </div>
+    <div id="outer">
+    <p id="heading1">Top Games & Sport Events</p>
+        <div id="container">
+            <TopGames/>
+        </div>
+    </div>
+    <div id="outer">
+    <p id="heading1">Explore Fun Activities</p>
+        <div id="container">
+            <FunActivities/>
+        </div>
     </div>
     </>
     )
