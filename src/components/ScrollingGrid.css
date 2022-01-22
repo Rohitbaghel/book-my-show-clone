@@ -67,3 +67,115 @@
   left: 3.3vw;
   cursor: pointer;
 }
+
+#rightArrow3 {
+  font-size: 45px;
+  position: absolute;
+  top: 381vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow3 {
+  font-size: 45px;
+  position: absolute;
+  top: 381vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow4 {
+  font-size: 45px;
+  position: absolute;
+  top: 450vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow4 {
+  font-size: 45px;
+  position: absolute;
+  top: 450vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow5 {
+  font-size: 45px;
+  position: absolute;
+  top: 520vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow5 {
+  font-size: 45px;
+  position: absolute;
+  top: 520vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow6 {
+  font-size: 45px;
+  position: absolute;
+  top: 590vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow6 {
+  font-size: 45px;
+  position: absolute;
+  top: 590vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow7 {
+  font-size: 45px;
+  position: absolute;
+  top: 650vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow7 {
+  font-size: 45px;
+  position: absolute;
+  top: 650vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow8 {
+  font-size: 45px;
+  position: absolute;
+  top: 710vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow8 {
+  font-size: 45px;
+  position: absolute;
+  top: 710vh;
+  left: 3.3vw;
+  cursor: pointer;
+}
+
+#rightArrow9 {
+  font-size: 45px;
+  position: absolute;
+  top: 760vh;
+  left: 92.1vw;
+  cursor: pointer;
+}
+
+#leftArrow9 {
+  font-size: 45px;
+  position: absolute;
+  top: 760vh;
+  left: 3.3vw;
+  cursor: pointer;
+}

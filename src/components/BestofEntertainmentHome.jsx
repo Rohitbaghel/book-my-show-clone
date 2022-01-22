@@ -23,54 +23,34 @@ export const BestofEntertainmentHome = () => {
         {flag2 && <AiFillLeftCircle id="leftArrow1" onClick={scrollToFirst}/>}
         <div className="gridDiv" >
         <div ref={refDivFirst}>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODclICA0MzRrIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70/et00129538-dejcsesrba-portrait.jpg"/>
-            <p className="movieTitle">Pushpa: The Rise</p>
-            <p>Action/Thriller</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTQwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png"/>
         </div>
         <div>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODMlICAyayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00321184-gydcmxgppr-portrait.jpg"/>
-            <p className="movieTitle">Nay Varan Bhat Loncha Kon Nay Koncha</p>
-            <p>Crime/Drama/Thriller</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/fitness-collection-2020081150.png"/>
         </div>
         <div>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODklICAxMjBrIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70/et00062705-zfvpwbzbjm-portrait.jpg"/>
-            <p className="movieTitle">83</p>
-            <p>Drama/Sports</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MjUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/kids-collection-202007220710.png"/>
         </div>
         <div>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-OTElICA0MjBrIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70/et00310790-axrtnqummf-portrait.jpg"/>
-            <p className="movieTitle">Spider-Man: No Way Home</p>
-            <p>Action/Adventure/Sci-Fi</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-OTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/comedy-shows-collection-202007220710.png"/>
         </div>
         <div>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzQlICAxayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00107364-sgtyjcebux-portrait.jpg"/>
-            <p className="movieTitle">The King`s Man</p>
-            <p>Action/Adventure/Comedy</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/music-shows-collection-202007220710.png"/>
         </div>
         <div>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-Mzg0IGxpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70/et00320360-rnxgmvxaaa-portrait.jpg"/>
-            <p className="movieTitle">Coffee</p>
-            <p>Drama/Romantic</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/esports-collection-202011150107.png"/>
         </div>
         <div>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODIlICAzOGsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00316733-bhgbvzmcup-portrait.jpg"/>
-            <p className="movieTitle">Bangarraju</p>
-            <p>Comedy/Fantasy</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTAgRXZlbnRz,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/self-improvement-collection-202007220710.png"/>
         </div>
         <div>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODclICAxMGsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00318116-defuhscsyr-portrait.jpg"/>
-            <p className="movieTitle">Pandu</p>
-            <p>Comedy</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300/cooking-collection-202007222211.png"/>
         </div>
         <div>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzglICAyMGsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00145956-pfxrtruxwq-portrait.jpg"/>
-            <p className="movieTitle">Chandigarh Kare Aashiqui</p>
-            <p>Comedy/Drama/Romantic</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/interactive-games-collection-202012041129.png"/>
         </div>
         <div ref={refDivLast}>
-            <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-OTElICAxM2sgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00308384-bwldkbbrbl-portrait.jpg"/>
-            <p className="movieTitle">Jhimma</p>
-            <p>Comedy/Drama/Family</p>
+            <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/art-and-crafts-collection-202007220710.png"/>
         </div>
     </div>
         </>
