@@ -16,13 +16,13 @@ function App() {
 
     
       {/* <Navbar /> */}
-      {/* <Home/> */}
+      <Home/>
       {/* <Footer/>  */}
       {/* <Login /> */}
       {/* <Logout /> */}
       {/* <Movies /> */}
-      <ProductDetails />
-      <Cinema />
+      {/* <ProductDetails /> */}
+      {/* <Cinema /> */}
 
     </div>
   );
