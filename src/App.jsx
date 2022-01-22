@@ -6,24 +6,24 @@ import { Movies } from "./components/Movies";
 import { Login } from "./components/Login";
 import { Logout } from "./components/Logout";
 import { ProductDetails } from "./components/ProductDetails";
-import {Cinema} from "./components/Cinema";
-
-
+import { Cinema } from "./components/Cinema";
+import { Play } from "./components/Play";
 
 function App() {
   return (
     <div className="App">
-
-    
       {/* <Navbar /> */}
-       <Home/> 
+      <Home/>
       {/* <Footer/>  */}
       {/* <Login /> */}
       {/* <Logout /> */}
       {/* <Movies /> */}
-      {/*<ProductDetails />
-      <Cinema />*/}
+      {/* <ProductDetails /> */}
+      {/* <Cinema /> */}
 
+      {/* <ProductDetails />
+      <Cinema /> */}
+      <Play />
     </div>
   );
 }
