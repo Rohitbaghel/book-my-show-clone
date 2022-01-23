@@ -10,7 +10,7 @@ import { FaUserCircle } from "react-icons/fa";
 Modal.setAppElement("#root");
 const NavSm = () => {
   return (
-    <>
+    <div className="mt-0">
       <div className="text-white flex items-center justify-between ">
         <div>
           <h3 className="text-xl font-bold">It All starts Here!</h3>
@@ -23,7 +23,7 @@ const NavSm = () => {
           <BiSearch className="w-full h-full" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 const NavMd = () => {
@@ -51,7 +51,7 @@ const NavLg = () => {
           setIsModelOpen(false);
         }}
       >
-        <div className="bg-white border  ">
+        <div className="bg-white border mt-0 ">
           <input
             type="text"
             placeholder="Search for Your City"

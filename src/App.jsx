@@ -9,6 +9,7 @@ import { Logout } from "./components/Logout";
 import { ProductDetails } from "./components/ProductDetails";
 import { Cinema } from "./components/Cinema";
 import { Play } from "./components/Play";
+import { Laughter } from "./components/laughterHome";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/movies/:Id" element={<ProductDetails />}></Route>
         <Route path="/cinema" element={<Cinema />}></Route>
         <Route path="/play" element={<Play />}></Route>
+        <Route path="/events" element={<Laughter />}></Route>
       </Routes>
     </div>
   );
