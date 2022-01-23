@@ -6,6 +6,7 @@ import Navbar from "./navbar.components";
 import { AiFillSafetyCertificate, AiOutlineMobile } from "react-icons/ai";
 import { MdOutlineFastfood } from "react-icons/md";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 export const Cinema = () => {
   const [cinemaTime, setCinemaTime] = useState([]);
@@ -80,9 +81,16 @@ export const Cinema = () => {
                           <div> {`${e[key]}`}</div>;
                         }
                       })}
-                      <button>2:30PM </button>
-                      <button>11:30AM</button>
-                      <button>4:30PM</button>
+                      {/* Add redirect path here  */}
+                      <Link to="/">
+                        <button onClick={() => {}}>2:30PM </button>
+                      </Link>
+                      <Link to="/">
+                        <button>11:30AM</button>
+                      </Link>
+                      <Link to="/">
+                        <button>4:30PM</button>
+                      </Link>
                       <div className="ticket">
                         {" "}
                         <h6>🟢</h6>{" "}
