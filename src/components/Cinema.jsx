@@ -91,6 +91,9 @@ export const Cinema = () => {
                       <Link to="/">
                         <button>4:30PM</button>
                       </Link>
+                      <button >2:30PM </button>
+                      <button>11:30AM</button>
+                      <button>4:30PM</button>
                       <div className="ticket">
                         {" "}
                         <h6>🟢</h6>{" "}
