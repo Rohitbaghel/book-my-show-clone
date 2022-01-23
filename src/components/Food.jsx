@@ -108,9 +108,11 @@ export const Food=() => {
                 <p>Select Ticket Type</p>
                 <div className="flex justify-between"> 
                     <div >
+                        {/* Link to Payment*/}
                        <SiPaytm className="text-6xl"/>
                     </div>
                     <div>
+                        {/* Home */}
                         <AiOutlineHome className="text-4xl mt-2"/>
                     </div>
                 </div>
