@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useGoogleLogin } from "react-google-login";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 // refresh token
 import { refreshTokenSetup } from "../utils/refreshToken";
@@ -9,10 +10,13 @@ const clientId =
   "907542318272-1g801951fo18ic65g0et2qhceggc76ms.apps.googleusercontent.com";
 
 export const Login = () => {
+  const navigate = useNavigate();
   const [text, setText] = useState("");
   const [token, setToken] = useState("");
   const onSuccess = (res) => {
     console.log("Login Success: currentUser:", res.profileObj);
+    console.log("Login Success: currentUser:", res.givenName);
+
     alert(`Logged in successfully`);
     refreshTokenSetup(res);
   };
@@ -59,7 +63,13 @@ export const Login = () => {
       <br />
       {/* login with Apple  */}
       <div className="googleLogin">
-        <button onClick={signIn} className="button">
+        <button
+          onClick={() => {
+            signIn();
+            navigate(-1);
+          }}
+          className="button"
+        >
           <img
             src="https://img.icons8.com/ios-filled/344/mac-os.png"
             alt="Apple login"
@@ -69,7 +79,7 @@ export const Login = () => {
           <span className="buttonText">Continue with Apple </span>
         </button>
       </div>
-      <h3> OR</h3>
+      <h2 className="text-center my-2"> OR</h2>
       <div className="loginWithNumber">
         <div>
           <img
@@ -89,7 +99,13 @@ export const Login = () => {
         ></input>
       </div>
       <br />
-      <button className="loginBtn" onClick={() => setToken(Date.now())}>
+      <button
+        className="ContinueBTn"
+        onClick={() => {
+          setToken(Date.now());
+          navigate(-1);
+        }}
+      >
         {" "}
         Continue
       </button>

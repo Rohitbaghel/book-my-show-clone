@@ -6,6 +6,7 @@ import Navbar from "./navbar.components";
 import { AiFillSafetyCertificate, AiOutlineMobile } from "react-icons/ai";
 import { MdOutlineFastfood } from "react-icons/md";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 export const Cinema = () => {
   const [cinemaTime, setCinemaTime] = useState([]);
@@ -20,7 +21,6 @@ export const Cinema = () => {
       console.log("error:", err);
     }
   };
-  
 
   useEffect(() => {
     getCinemaTime();
@@ -32,9 +32,7 @@ export const Cinema = () => {
       <div className="navbar">
         <Navbar />
       </div>
-      <div className="moviesContainer">
-
-      </div>
+      <div className="moviesContainer"></div>
       <div className="banner">
         <div className=" ticket">
           <h1>
@@ -83,9 +81,17 @@ export const Cinema = () => {
                           <div> {`${e[key]}`}</div>;
                         }
                       })}
-                      <button>2:30PM </button>
-                      <button>11:30AM</button>
-                      <button>4:30PM</button>
+                      {/* Add redirect path here  */}
+                      <Link to="/foods">
+                        <button onClick={() => {}}>2:30PM </button>
+                      </Link>
+                      <Link to="/foods">
+                        <button>11:30AM</button>
+                      </Link>
+                      <Link to="/foods">
+                        <button>4:30PM</button>
+                      </Link>
+
                       <div className="ticket">
                         {" "}
                         <h6>🟢</h6>{" "}
