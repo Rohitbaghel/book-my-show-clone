@@ -1,13 +1,17 @@
 import React, {useEffect, useState} from 'react'
+import {useParams,Link} from 'react-router-dom'
 import {FaRegUserCircle} from "react-icons/fa";
 import { AiOutlineLike ,AiOutlineDislike} from "react-icons/ai";
 
-export const ProductDetails = () => {
+export const ProductDetails=() => {
+  const {Id}=useParams()
+  console.log(useParams)
+  
   const [data, setData] = useState({})
   const getMoviesDatabyID = async () => {
     try {
       let res = await fetch(
-        `http://localhost:3600/movies/61e91c76d0ff80b073c000ef`
+        `http://localhost:3600/movies/${Id}`
       )
       let result = await res.json()
       console.log(result)
@@ -48,20 +52,23 @@ export const ProductDetails = () => {
               </div>
             </div>
             <div className='flex my-2'>
-              <div className='border text-black bg-white mr-2 px-2'>{data?.screen_type[0]?.type}</div>
+              <div className='border text-black bg-white mr-2 px-2'>UE</div>
               <div className='border text-black bg-white px-4'>
                 {data?.languages}
               </div>
             </div>
             <div className='text-white text-left my-2'>
               <span className='mx-2'>{data?.movie_duration}</span>
-              <span className='mx-1'>{data?.movie_genre[0]?.genre},&#32;{data?.movie_genre[1]?.genre},&#32;{data?.movie_genre[2]?.genre} </span>
+              {/* <span className='mx-1'>{data?.movie_genre[0]?.genre},&#32;{data?.movie_genre[1]?.genre},&#32;{data?.movie_genre[2]?.genre} </span> */}
               <span className='mx-2'>{data?.movie_grade}</span>
               <span>{data?.release_date}</span>
             </div>
+            <Link to='/cinema'>
+          
             <button className='text-white border px-8 py-2 bg-red-600 rounded-xl '>
               Book Now
-            </button>
+              </button>
+              </Link>
           </div>
         </div>
 
@@ -71,7 +78,7 @@ export const ProductDetails = () => {
             <p>{data?.about_movie}</p>
           </div>
           {/* cast */}
-          <div>
+          {/* <div>
             <p className='text-3xl font-bold my-8'>Cast</p>
             <div className='grid grid-cols-6 gap-3'>
               <div>
@@ -141,10 +148,10 @@ export const ProductDetails = () => {
                 <p className='text-center mt-2'>{data?.cast[5]?.character}</p>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* cast */}
           {/* Crew */}
-          <div className='my-8'>
+          {/* <div className='my-8'>
             <p className='text-3xl font-bold my-8'>Crew</p>
             <div className='grid grid-cols-7 gap-3'>
               <div>
@@ -225,7 +232,7 @@ export const ProductDetails = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
                   {/* Crew */}
 {/* Top reviews */}
                   <div>

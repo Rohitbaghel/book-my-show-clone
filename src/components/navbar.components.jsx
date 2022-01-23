@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {Link} from 'react-router-dom'
 import { GoChevronRight } from "react-icons/go";
 import { BiSearch, BiMenu, BiChevronDown } from "react-icons/bi";
 import Modal from "react-modal";
@@ -142,15 +142,15 @@ const NavLg = () => {
           </div>
         </div>
       </Modal>
-      <div className="container mx-auto px-4 flex items-center justify-between bg-black ">
-        <div className="flex items-center w-1/2 gap-3">
-          <div className="w-12 h-12">
+      <div className="container -mt-2 px-4 flex items-center justify-between bg-black w-full">
+        <div className="flex items-center w-2/3 gap-3">
+          <div className="w-12 h-12 ">
             <img
               src="https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png"
               alt="logo"
               className="w-full h-full"
             />
-          </div>
+          </div >
           <div className="w-full flex items-center gap-3 bg-white px-3 py-2 rounded-md ml-10">
             <BiSearch className="ml-2" />
             <input
@@ -199,20 +199,20 @@ const Navbar = () => {
         </div>
         <div className="flex justify-between bg-black text-white mt-0">
           <div className="flex gap-2 mt-0">
-            <div>Movie</div>
-            <div>Stream</div>
-            <div>Events</div>
-            <div>Plays</div>
-            <div>Sports</div>
-            <div>Activities</div>
-            <div>Buzz</div>
+            <div><Link to="/movies">Movie</Link></div>
+            <div><Link to="/streams">Stream</Link></div>
+            <div><Link to="/events">Events</Link></div>
+            <div><Link to="/play">Plays</Link></div>
+            <div><Link to="/Sports">Sports</Link></div>
+            <div><Link to="/Activities">Activities</Link></div>
+            <div><Link to="/Buzz">Buzz</Link></div>
           </div>
 
           <div className="flex gap-2">
-            <div>ListYourShow</div>
-            <div>Corporates</div>
-            <div>Offers</div>
-            <div>Gift Cards</div>
+            <div><Link to="/ListYourShow">ListYourShow</Link></div>
+            <div><Link to="/Corporates">Corporates</Link></div>
+            <div><Link to="/Offers">Offers</Link></div>
+            <div><Link to="/GiftCards">Gift Cards</Link> </div>
           </div>
         </div>
       </nav>

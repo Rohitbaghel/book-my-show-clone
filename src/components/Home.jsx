@@ -8,12 +8,15 @@ import { OutdoorEvents } from "./outdoorEventsHome"
 import { Laughter } from "./laughterHome";
 import { Popular } from "./popularEventsHome";
 import { TopGames } from "./topGames";
-import { FunActivities } from "./funActivitiesHome";
+import {FunActivities} from "./funActivitiesHome";
+
 import "./Home.css";
+import Navbar from "./navbar.components";
 
 export const Home = () => {
     return (
-    <>
+        <>
+     <Navbar/>
     <Slideshow/>
     <div id="outer">
     <p id="heading1">Recommended Movies</p>

@@ -69,7 +69,7 @@ export const Login = () => {
           <span className="buttonText">Continue with Apple </span>
         </button>
       </div>
-      <h3> OR</h3>
+      <h2 className='text-center my-2'> OR</h2>
       <div className="loginWithNumber">
         <div>
           <img
@@ -89,7 +89,7 @@ export const Login = () => {
         ></input>
       </div>
       <br />
-      <button className="loginBtn" onClick={() => setToken(Date.now())}>
+      <button className="ContinueBTn" onClick={() => setToken(Date.now())}>
         {" "}
         Continue
       </button>

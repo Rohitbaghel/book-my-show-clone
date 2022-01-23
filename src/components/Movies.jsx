@@ -1,6 +1,7 @@
 
 import React, {useEffect, useState} from 'react';
 import {AiOutlineDown, AiOutlineRight} from "react-icons/ai";
+import {Link} from "react-router-dom"
 import Modal from 'react-modal'
 
 export const Movies=() => {
@@ -116,6 +117,7 @@ export const Movies=() => {
                                 <p className='text-left text-xl font-semibold my-4'>{movie_name}</p>
                                 <p className='text-left text-slate-400 my-4'>{movie_grade}</p>
                                 <p className='text-left text-slate-400 my-4'>{languages}</p>
+                                <Link to={`/movies/${_id}`}>see Details</Link>
                             </div>
                         )
                     })}
