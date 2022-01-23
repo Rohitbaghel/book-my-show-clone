@@ -10,12 +10,12 @@ import { ProductDetails } from "./components/ProductDetails";
 import { Cinema } from "./components/Cinema";
 import { Play } from "./components/Play";
 import { Laughter } from "./components/laughterHome";
-import {Food} from "./components/Food";
+import { Food } from "./components/Food";
 
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/logout" element={<Logout />}></Route>
@@ -24,8 +24,8 @@ function App() {
         <Route path="/cinema" element={<Cinema />}></Route>
         <Route path="/play" element={<Play />}></Route>
         <Route path="/events" element={<Laughter />}></Route>
-      </Routes> */}
-      <Food/>
+        <Route path="/foods" element={<Food />}></Route>
+      </Routes>
     </div>
   );
 }
