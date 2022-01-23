@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+  # BookMyShow Clone
+**Note : This project is made just for educational purposes**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a part of our build week in coding bootcamp name ***masai school*** so, basically as a part of build week which happens after each one month of the journey we collaborate in a team of 4-5 people and work on making a clone of a specific website .
 
-## Available Scripts
+<span>
+<div style="margin:auto; display:flex; items:center; justify-content:center">
+<span>
+<img src="images/siteLogo.png" style="width:15px" alt="Unable To Load" style="display:inline"></img><span>
+<span style="font-Size:20px; font-weight:bold; margin-left:10px">BookMyShow</span>
+</div>
+<hr></hr>
 
-In the project directory, you can run:
+## Page Details
 
-### `npm start`
+#### Homepage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ *<p style="color:purple">Home page is built with beautiful components, it contains list of recommended movies and events and user can book tickets for any show. User can select a location and also sign-in or create an account before booking.</p>*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ <img src=" homepage.png"/>
 
-### `npm test`
+ #### movie
+  *<p style="color:purple">in this page user can see all the movies for his selected city user can filter the movie according to language, genres and format</p>*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### Login and Signup Components 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*<p style="color:purple">We have made our own fake api using a library called json-server for login and signup authentication.</p>*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ <img src="sign-in.png"/>   
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ <h2>Tech stack used</h2>
 
-### `npm run eject`
+ <ul>
+ <li style="color:blue">Tailwind css</li>
+ <li style="color:blue">Raw Css</li>
+ <li style="color:blue">Raw Html</li>
+ <li style="color:blue">Raw Javascript</li>
+ </ul>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ <p style="font-weight:bold">Libraries used<p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ <ul>
+ <li style="color:blue">React</li>
+ <li style="color:blue">Redux</li>
+ <li style="color:blue">Json-server</li> 
+ </ul>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h4>Contributors</h4>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h5>Rohit Baghel</h5>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[github](https://github.com/Rohitbaghel)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<h5>Prakhar Bhalla</h5>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+[github](https://github.com/Prakhar-Bhalla)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<h5>Ranjan Kumar Thakur</h5>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+[github](https://github.com/Ranjan1501)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<h5>Kamesh Hedau</h5>
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[github](https://github.com/Kamesh255)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h5>Imran Ali</h5>
+
+[github](https://github.com/imran97391)
+
+ 
+
+ 
