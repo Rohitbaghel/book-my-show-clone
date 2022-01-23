@@ -1,0 +1,8 @@
+ .btn:hover{
+     background-color: rgb(248, 68, 100);  
+     cursor: pointer; 
+ }
+ .bank:hover{
+    box-shadow: 7px 5px 5px gray; 
+ }
+ 

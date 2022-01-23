@@ -108,11 +108,11 @@ import {AiOutlineDown, AiOutlineRight} from "react-icons/ai";
                 <div className=' grid grid-cols-4 gap-10'>
                     {data.map(({_id,banner_image,name,location}) => {
                         return (
-                            <div className='rounded-2xl border-2 border-white grid grid-cols-1' key={_id}>
-                                <div className='h-70%'>
-                                <img src={banner_image} alt="" className='h-full object-cover w-full' />
+                            <div className=' border-white grid grid-cols-1' key={_id}>
+                                <div className=' ' >
+                                <img src={banner_image} alt="" style={{height:"350px",borderRadius:"10px"}} />
                                 </div>
-                                <div className='h-30%'>
+                                <div className=''style={{height:"120px"}}>
                                 <p className='text-left text-xl font-semibold my-4'>{name}</p>
                                 <p className='text-left text-slate-400 my-4'>{location}</p>
                                 </div>

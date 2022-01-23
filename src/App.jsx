@@ -8,6 +8,8 @@ import { Logout } from "./components/Logout";
 import { ProductDetails } from "./components/ProductDetails";
 import {Cinema} from "./components/Cinema";
 import {Laughter} from './components/Laughter'
+import {GiftCart} from './components/GiftCart'
+import {Offers} from './components/Offers'
 
 
 
@@ -25,6 +27,8 @@ function App() {
       <ProductDetails />
       <Cinema /> */}
       <Laughter/>
+      <GiftCart/>
+      <Offers/>
 
     </div>
   );
