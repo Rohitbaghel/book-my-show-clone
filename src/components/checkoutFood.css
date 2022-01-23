@@ -1,0 +1,25 @@
+.foodGrid {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 2%;
+}
+
+.foodGrid button {
+  position: relative;
+  bottom: 40px;
+  left: 250px;
+  color: red;
+  border: 1px solid grey;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.foodGrid div {
+  box-shadow: 2px 2px 2px wheat;
+  height: 33vh;
+}
+
+.foodGrid img {
+  width: 100%;
+}

@@ -1,0 +1,20 @@
+.centreText {
+  text-align: center;
+}
+
+span {
+  color: crimson;
+}
+
+#filterDiv {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#filterDiv button {
+  padding: 3px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
