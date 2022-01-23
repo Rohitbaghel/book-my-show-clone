@@ -4,7 +4,8 @@ import { GoChevronRight } from "react-icons/go";
 import { BiSearch, BiMenu, BiChevronDown } from "react-icons/bi";
 import Modal from "react-modal";
 import { Login } from "./Login";
-import { Logout } from "./Logout";
+import { FaUserCircle } from "react-icons/fa";
+//FaUserCircle
 
 Modal.setAppElement("#root");
 const NavSm = () => {
@@ -41,6 +42,7 @@ const NavLg = () => {
   const [isModelOpen, setIsModelOpen] = useState(false);
   const [locations, setLocations] = useState("");
   const [value, setValue] = useState("");
+
   return (
     <>
       <Modal
@@ -171,6 +173,10 @@ const NavLg = () => {
           >
             {locations === "" ? "Location" : locations} <BiChevronDown />
           </span>
+          <h1 style={{ color: "white", fontSize: "25px", height: "15px" }}>
+            {" "}
+            <FaUserCircle />{" "}
+          </h1>
           <Link to="/login">
             <button
               className="bg-red-600 text-white px-2 py-1 text-sm rounded mr-8"
@@ -252,12 +258,12 @@ const Navbar = () => {
             <div>
               <Link to="/GiftCards">Gift Cards</Link>{" "}
             </div>
-            <div>
+            {/* <div>
               <Link to="/login">Sign in</Link>{" "}
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <Link to="/logout">Sign out</Link>{" "}
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

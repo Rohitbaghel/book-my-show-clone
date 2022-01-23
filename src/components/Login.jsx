@@ -15,6 +15,8 @@ export const Login = () => {
   const [token, setToken] = useState("");
   const onSuccess = (res) => {
     console.log("Login Success: currentUser:", res.profileObj);
+    console.log("Login Success: currentUser:", res.givenName);
+
     alert(`Logged in successfully`);
     refreshTokenSetup(res);
   };
