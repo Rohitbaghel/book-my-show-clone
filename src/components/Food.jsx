@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { SiPaytm } from "react-icons/si";
 import { AiFillDownCircle, AiOutlineHome } from "react-icons/ai";
 import { BiFoodTag } from "react-icons/bi";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export const Food = () => {
   const navigate = useNavigate();
   const [food, setFood] = useState([]);
@@ -118,54 +118,6 @@ export const Food = () => {
               <p>Amount Payable</p>
             </div>
             <div>
-                <div>
-                    <p className='text-2xl text-red-600'>Booking Summary</p>
-                    <div className='flex justify-between'>
-                        <div  className='my-4'>
-                            <p  className='my-4'> CLASSIC - L1 ( 1 Ticket )</p>  
-                            <p  className='my-4'>AUDI 3</p>
-                          
-                        </div>
-                        <div>
-                            <p  className='my-6'>Rs. 150.00</p>
-                            <p  className='my-4'>Rs.28.32</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div>
-                    <div className='flex justify-between'>
-                        <div  className='my-4'>
-                         <p  className='my-4'>Sub total</p>   
-                        </div>
-                        <div>
-                            <p  className='mt-8'>Rs.178.32</p>
-                        </div>
-                    </div>
-                </div>
-                <p>Your current state is <span>Delhi</span></p>
-                <div className='flex justify-between my-4' style={{backgroundColor:'#FFFDDD'}}>
-                    <div>
-                        <p>Amount Payable</p>
-                    </div>
-                    <div>
-                        <p>Rs. 179.32</p>
-                    </div>
-                </div>
-                <p>Select Ticket Type</p>
-                <div className="flex justify-between"> 
-                    <div >
-                        {/* Link to Payment*/}
-                       <SiPaytm className="text-6xl"/>
-                    </div>
-                    <div>
-                        {/* Home */}
-                        <AiOutlineHome className="text-4xl mt-2"/>
-                    </div>
-                </div>
-                <p>Show the m-ticket QR Code on your mobile to enter the cinema.</p>
-                <button className="border px-8 text-2xl font-bold hover:bg-red-600">Buy Ticket</button>
-                <p>You can cancel the tickets 20 min(s) before the show. Refunds will be done according to Cancellation Policy</p>
               <p>Rs. 179.32</p>
             </div>
           </div>
