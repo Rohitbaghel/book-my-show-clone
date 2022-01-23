@@ -1,5 +1,5 @@
 import "./App.css";
-import {Routes,Route} from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import Footer from "./components/Footer";
 import Navbar from "./components/navbar.components";
@@ -14,15 +14,14 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/login' element={<Login />}></Route>
-        <Route path='/logout' element={<Logout />}></Route>
-        <Route path='/movies' element={<Movies />}></Route>
-        <Route path='/movies/:Id' element={<ProductDetails />}></Route>
-        <Route path='/cinema' element={<Cinema />}></Route>
-        <Route path='/play' element={<Play />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/logout" element={<Logout />}></Route>
+        <Route path="/movies" element={<Movies />}></Route>
+        <Route path="/movies/:Id" element={<ProductDetails />}></Route>
+        <Route path="/cinema" element={<Cinema />}></Route>
+        <Route path="/play" element={<Play />}></Route>
       </Routes>
-  
     </div>
   );
 }

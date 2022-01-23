@@ -74,15 +74,13 @@
   background-color: #f74464;
 }
 
-
-.ContinueBTn{
+.ContinueBTn {
   width: 30%;
   padding: 1%;
   background-color: grey;
   color: white;
-  margin-left:35% ;
+  margin-left: 35%;
   font-size: 18px;
   font-weight: 600;
   border: none;
-  
 }

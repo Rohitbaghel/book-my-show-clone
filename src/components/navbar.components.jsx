@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { GoChevronRight } from "react-icons/go";
 import { BiSearch, BiMenu, BiChevronDown } from "react-icons/bi";
 import Modal from "react-modal";
+import { Login } from "./Login";
+import { Logout } from "./Logout";
 
 Modal.setAppElement("#root");
 const NavSm = () => {
@@ -150,7 +152,7 @@ const NavLg = () => {
               alt="logo"
               className="w-full h-full"
             />
-          </div >
+          </div>
           <div className="w-full flex items-center gap-3 bg-white px-3 py-2 rounded-md ml-10">
             <BiSearch className="ml-2" />
             <input
@@ -169,9 +171,24 @@ const NavLg = () => {
           >
             {locations === "" ? "Location" : locations} <BiChevronDown />
           </span>
-          <button className="bg-red-600 text-white px-2 py-1 text-sm rounded mr-8">
-            Sign in
-          </button>
+          <Link to="/login">
+            <button
+              className="bg-red-600 text-white px-2 py-1 text-sm rounded mr-8"
+              onClick={Login}
+            >
+              Sign in
+            </button>
+          </Link>
+
+          <Link to="/logout">
+            <button
+              className="bg-red-600 text-white px-2 py-1 text-sm rounded mr-8"
+              onClick={Login}
+            >
+              Sign out
+            </button>
+          </Link>
+
           <div className="w-8 h-8 text-white">
             <BiMenu className="w-full h-full" />
           </div>
@@ -199,20 +216,48 @@ const Navbar = () => {
         </div>
         <div className="flex justify-between bg-black text-white mt-0">
           <div className="flex gap-2 mt-0">
-            <div><Link to="/movies">Movie</Link></div>
-            <div><Link to="/streams">Stream</Link></div>
-            <div><Link to="/events">Events</Link></div>
-            <div><Link to="/play">Plays</Link></div>
-            <div><Link to="/Sports">Sports</Link></div>
-            <div><Link to="/Activities">Activities</Link></div>
-            <div><Link to="/Buzz">Buzz</Link></div>
+            <div>
+              <Link to="/movies">Movie</Link>
+            </div>
+            <div>
+              <Link to="/streams">Stream</Link>
+            </div>
+            <div>
+              <Link to="/events">Events</Link>
+            </div>
+            <div>
+              <Link to="/play">Plays</Link>
+            </div>
+            <div>
+              <Link to="/Sports">Sports</Link>
+            </div>
+            <div>
+              <Link to="/Activities">Activities</Link>
+            </div>
+            <div>
+              <Link to="/Buzz">Buzz</Link>
+            </div>
           </div>
 
           <div className="flex gap-2">
-            <div><Link to="/ListYourShow">ListYourShow</Link></div>
-            <div><Link to="/Corporates">Corporates</Link></div>
-            <div><Link to="/Offers">Offers</Link></div>
-            <div><Link to="/GiftCards">Gift Cards</Link> </div>
+            <div>
+              <Link to="/ListYourShow">ListYourShow</Link>
+            </div>
+            <div>
+              <Link to="/Corporates">Corporates</Link>
+            </div>
+            <div>
+              <Link to="/Offers">Offers</Link>
+            </div>
+            <div>
+              <Link to="/GiftCards">Gift Cards</Link>{" "}
+            </div>
+            <div>
+              <Link to="/login">Sign in</Link>{" "}
+            </div>
+            <div>
+              <Link to="/logout">Sign out</Link>{" "}
+            </div>
           </div>
         </div>
       </nav>
