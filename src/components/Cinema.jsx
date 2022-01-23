@@ -82,18 +82,16 @@ export const Cinema = () => {
                         }
                       })}
                       {/* Add redirect path here  */}
-                      <Link to="/">
+                      <Link to="/foods">
                         <button onClick={() => {}}>2:30PM </button>
                       </Link>
-                      <Link to="/">
+                      <Link to="/foods">
                         <button>11:30AM</button>
                       </Link>
-                      <Link to="/">
+                      <Link to="/foods">
                         <button>4:30PM</button>
                       </Link>
-                      <button >2:30PM </button>
-                      <button>11:30AM</button>
-                      <button>4:30PM</button>
+
                       <div className="ticket">
                         {" "}
                         <h6>🟢</h6>{" "}
