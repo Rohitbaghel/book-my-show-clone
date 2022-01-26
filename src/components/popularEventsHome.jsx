@@ -4,27 +4,25 @@ import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
 
 export const Popular = () => {
-    const refDivLast = useRef();
-    const refDivFirst = useRef();
+    const refDiv = useRef();
     const [flag1, setFlag1] = useState(true);
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
-        refDivFirst.current.scrollIntoView();
-        
+        refDiv.current.scrollLeft -= 1800;
         setFlag1(true);
         setFlag2(false);
     }
     const scrollToLast = () => {
-        refDivLast.current.scrollIntoView();
+        refDiv.current.scrollLeft += 1800;
         setFlag1(false);
         setFlag2(true);
     }
     return (
-        <>
+        <div ref={refDiv} id="container8">
         {flag1 && <AiFillRightCircle id="rightArrow7" onClick={scrollToLast}/>}
         {flag2 && <AiFillLeftCircle id="leftArrow7" onClick={scrollToFirst}/>}
         <div className="gridDiv" >
-        <div ref={refDivFirst}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMyBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00321311-cxadpbfabd-portrait.jpg"/>
             <p className="movieTitle">Doodle All the Way</p>
             <p>Watch on Zoom</p>
@@ -69,12 +67,12 @@ export const Popular = () => {
             <p className="movieTitle">Karte Tumha Mujra</p>
             <p>Adya Krantiveer</p>
         </div>
-        <div ref={refDivLast}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAyNiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00321451-mfcfyrpgaq-portrait.jpg"/>
             <p className="movieTitle">Sonali Thakker Live</p>
             <p>Dorangos Hall</p>
         </div>
-    </div>
-        </>
+        </div>
+        </div>
     )
 }

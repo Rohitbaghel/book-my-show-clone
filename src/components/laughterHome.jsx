@@ -5,31 +5,25 @@ import Navbar from "./navbar.components";
 import Footer from "./Footer";
 
 export const Laughter = () => {
-  const refDivLast = useRef();
-  const refDivFirst = useRef();
+  const refDiv = useRef();
   const [flag1, setFlag1] = useState(true);
   const [flag2, setFlag2] = useState(false);
   const scrollToFirst = () => {
-    refDivFirst.current.scrollIntoView();
-
+    refDiv.current.scrollLeft -= 1800;
     setFlag1(true);
     setFlag2(false);
   };
   const scrollToLast = () => {
-    refDivLast.current.scrollIntoView();
+    refDiv.current.scrollLeft += 1800;
     setFlag1(false);
     setFlag2(true);
   };
   return (
-    <div>
-      <div>
-        <div className="navbar">
-          <Navbar />
-        </div>
+        <div ref={refDiv} id="container7">
         {flag1 && <AiFillRightCircle id="rightArrow6" onClick={scrollToLast} />}
         {flag2 && <AiFillLeftCircle id="leftArrow6" onClick={scrollToFirst} />}
         <div className="gridDiv">
-          <div ref={refDivFirst}>
+          <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-V2VkLCAyNiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00321289-ytemntvppg-portrait.jpg" />
             <p className="movieTitle">Gaurav Gupta Live</p>
             <p>Watch on Zoom</p>
@@ -74,16 +68,12 @@ export const Laughter = () => {
             <p className="movieTitle">Death</p>
             <p>Watch on Zoom</p>
           </div>
-          <div ref={refDivLast}>
+          <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMiBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00321233-qakjvarser-portrait.jpg" />
             <p className="movieTitle">Mohit Morani Live</p>
             <p>Watch on Zoom</p>
           </div>
         </div>
-        <div className="navbar">
-          <Footer />
         </div>
-      </div>
-    </div>
   );
 };
