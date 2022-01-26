@@ -4,27 +4,25 @@ import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
 
 export const RecomendedMoviesHome = () => {
-    const refDivLast = useRef();
-    const refDivFirst = useRef();
+    const refDiv = useRef();
     const [flag1, setFlag1] = useState(true);
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
-        refDivFirst.current.scrollIntoView();
-        
+        refDiv.current.scrollLeft -= 1800;
         setFlag1(true);
         setFlag2(false);
     }
     const scrollToLast = () => {
-        refDivLast.current.scrollIntoView();
+        refDiv.current.scrollLeft += 1800;
         setFlag1(false);
         setFlag2(true);
     }
     return (
-        <>
+        <div ref={refDiv} id="container1">
         {flag1 && <AiFillRightCircle id="rightArrow" onClick={scrollToLast}/>}
         {flag2 && <AiFillLeftCircle id="leftArrow" onClick={scrollToFirst}/>}
         <div className="gridDiv" >
-        <div ref={refDivFirst}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODclICA0MzRrIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70/et00129538-dejcsesrba-portrait.jpg"/>
             <p className="movieTitle">Pushpa: The Rise</p>
             <p>Action/Thriller</p>
@@ -69,12 +67,12 @@ export const RecomendedMoviesHome = () => {
             <p className="movieTitle">Chandigarh Kare Aashiqui</p>
             <p>Comedy/Drama/Romantic</p>
         </div>
-        <div ref={refDivLast}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-OTElICAxM2sgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00308384-bwldkbbrbl-portrait.jpg"/>
             <p className="movieTitle">Jhimma</p>
             <p>Comedy/Drama/Family</p>
         </div>
     </div>
-        </>
+        </div>
     )
 }

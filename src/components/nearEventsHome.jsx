@@ -4,27 +4,25 @@ import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
 
 export const EventsNear = () => {
-    const refDivLast = useRef();
-    const refDivFirst = useRef();
+    const refDiv = useRef();
     const [flag1, setFlag1] = useState(true);
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
-        refDivFirst.current.scrollIntoView();
-        
+        refDiv.current.scrollLeft -= 1800;
         setFlag1(true);
         setFlag2(false);
     }
     const scrollToLast = () => {
-        refDivLast.current.scrollIntoView();
+        refDiv.current.scrollLeft += 1800;;
         setFlag1(false);
         setFlag2(true);
     }
     return (
-        <>
+        <div ref={refDiv} id="container4">
         {flag1 && <AiFillRightCircle id="rightArrow3" onClick={scrollToLast}/>}
         {flag2 && <AiFillLeftCircle id="leftArrow3" onClick={scrollToFirst}/>}
         <div className="gridDiv" >
-        <div ref={refDivFirst}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMiBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50/et00316295-agldekeqsx-portrait.jpg"/>
             <p className="movieTitle">Oriole Entertainment Live</p>
             <p>Watch on Zoom</p>
@@ -78,13 +76,13 @@ export const EventsNear = () => {
             <p>Sante Spa Cuisine: Mumbai</p>
             <p>4 kms away</p>
         </div>
-        <div ref={refDivLast}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMiBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00321615-fwqaahgxpv-portrait.jpg"/>
             <p className="movieTitle">comedy house : andheri</p>
             <p>One Nest Studios, Andheri East: Mumbai</p>
             <p>4.1 kms away</p>
         </div>
-    </div>
-        </>
+        </div>
+        </div>
     )
 }

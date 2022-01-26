@@ -6,11 +6,11 @@ export const Slideshow = () => {
     const ref2 =  useRef();
     let counter = 1;
     setInterval(function(){
-        if(counter === 1)
+        if(counter === 1 && ref1.current)
         {
             ref1.current.checked = true;
         }
-        if(counter === 2)
+        if(counter === 2 && ref2.current)
         {
             ref2.current.checked = true;
         }

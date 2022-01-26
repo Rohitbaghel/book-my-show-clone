@@ -3,26 +3,25 @@ import "./ScrollingGrid.css";
 import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
 export const BestofEntertainmentHome = () => {
-    const refDivLast = useRef();
-    const refDivFirst = useRef();
+    const refDiv = useRef();
     const [flag1, setFlag1] = useState(true);
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
-        refDivFirst.current.scrollIntoView();
+        refDiv.current.scrollLeft -= 1800;
         setFlag1(true);
         setFlag2(false);
     }
     const scrollToLast = () => {
-        refDivLast.current.scrollIntoView();
+        refDiv.current.scrollLeft += 1800;
         setFlag1(false);
         setFlag2(true);
     }
     return (
-        <>
+        <div ref={refDiv} id="container2">
         {flag1 && <AiFillRightCircle id="rightArrow1" onClick={scrollToLast}/>}
         {flag2 && <AiFillLeftCircle id="leftArrow1" onClick={scrollToFirst}/>}
-        <div className="gridDiv" >
-        <div ref={refDivFirst}>
+        <div className="gridDiv" style={{height : "330px"}}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTQwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png"/>
         </div>
         <div>
@@ -49,10 +48,10 @@ export const BestofEntertainmentHome = () => {
         <div>
             <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/interactive-games-collection-202012041129.png"/>
         </div>
-        <div ref={refDivLast}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/art-and-crafts-collection-202007220710.png"/>
         </div>
-    </div>
-        </>
+        </div>
+        </div>
     )
 }

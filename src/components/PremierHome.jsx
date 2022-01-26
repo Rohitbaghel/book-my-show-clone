@@ -3,26 +3,25 @@ import "./ScrollingGrid.css";
 import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
 export const PremierHome = () => {
-    const refDivLast = useRef();
-    const refDivFirst = useRef();
+    const refDiv = useRef();
     const [flag1, setFlag1] = useState(true);
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
-        refDivFirst.current.scrollIntoView();
+        refDiv.current.scrollLeft -= 1800;
         setFlag1(true);
         setFlag2(false);
     }
     const scrollToLast = () => {
-        refDivLast.current.scrollIntoView();
+        refDiv.current.scrollLeft += 1800;
         setFlag1(false);
         setFlag2(true);
     }
     return (
-        <>
+        <div ref={refDiv} id="container3">
         {flag1 && <AiFillRightCircle id="rightArrow2" onClick={scrollToLast}/>}
         {flag2 && <AiFillLeftCircle id="leftArrow2" onClick={scrollToFirst}/>}
         <div className="gridDiv" >
-        <div ref={refDivFirst}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00122526-nvybkaqagm-portrait.jpg"/>
             <p className="movieTitle">Dune</p>
             <p>English</p>
@@ -67,12 +66,12 @@ export const PremierHome = () => {
             <p className="movieTitle">Resident Evil: Welcome To Raccoon City</p>
             <p>English</p>
         </div>
-        <div ref={refDivLast}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00313805-bvrrpvdmvb-portrait.jpg"/>
             <p className="movieTitle">The Trip to Greece</p>
             <p>English</p>
         </div>
-    </div>
-        </>
+        </div>
+        </div>
     )
 }

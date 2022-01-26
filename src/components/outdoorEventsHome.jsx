@@ -4,27 +4,25 @@ import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
 
 export const OutdoorEvents = () => {
-    const refDivLast = useRef();
-    const refDivFirst = useRef();
+    const refDiv = useRef();
     const [flag1, setFlag1] = useState(true);
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
-        refDivFirst.current.scrollIntoView();
-        
+        refDiv.current.scrollLeft -= 1800;
         setFlag1(true);
         setFlag2(false);
     }
     const scrollToLast = () => {
-        refDivLast.current.scrollIntoView();
+        refDiv.current.scrollLeft += 1800;
         setFlag1(false);
         setFlag2(true);
     }
     return (
-        <>
+        <div ref={refDiv} id="container6">
         {flag1 && <AiFillRightCircle id="rightArrow5" onClick={scrollToLast}/>}
         {flag2 && <AiFillLeftCircle id="leftArrow5" onClick={scrollToFirst}/>}
         <div className="gridDiv" >
-        <div ref={refDivFirst}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMiBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00315217-shyeewcrpm-portrait.jpg"/>
             <p className="movieTitle">Hamleys Play</p>
             <p>Hamleys Play, Jio World Drive, BKC</p>
@@ -69,12 +67,12 @@ export const OutdoorEvents = () => {
             <p className="movieTitle">Kalsubai Night Trekking</p>
             <p>Meeting Point - Sanjay Gandhi National Park</p>
         </div>
-        <div ref={refDivLast}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMyBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00317831-svsqxkqlhe-portrait.jpg"/>
             <p className="movieTitle">Gateway Sailing Club - Day Sailing</p>
             <p>Gateway Sailing Club: Mumbai</p>
         </div>
-    </div>
-        </>
+        </div>
+        </div>
     )
 }

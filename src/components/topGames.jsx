@@ -4,27 +4,25 @@ import { AiFillRightCircle, AiFillLeftCircle } from "react-icons/ai";
 
 
 export const TopGames = () => {
-    const refDivLast = useRef();
-    const refDivFirst = useRef();
+    const refDiv = useRef();
     const [flag1, setFlag1] = useState(true);
     const [flag2, setFlag2] = useState(false);
     const scrollToFirst = () => {
-        refDivFirst.current.scrollIntoView();
-        
+        refDiv.current.scrollLeft -= 1800;
         setFlag1(true);
         setFlag2(false);
     }
     const scrollToLast = () => {
-        refDivLast.current.scrollIntoView();
+        refDiv.current.scrollLeft += 1800;
         setFlag1(false);
         setFlag2(true);
     }
     return (
-        <>
+        <div ref={refDiv} id="container9">
         {flag1 && <AiFillRightCircle id="rightArrow8" onClick={scrollToLast}/>}
         {flag2 && <AiFillLeftCircle id="leftArrow8" onClick={scrollToFirst}/>}
         <div className="gridDiv" >
-        <div ref={refDivFirst}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMiBKYW4gb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00313270-tedhsgbtng-portrait.jpg"/>
             <p className="movieTitle">BGMI Tournament</p>
             <p>Online</p>
@@ -69,12 +67,12 @@ export const TopGames = () => {
             <p className="movieTitle">Quarter-Final, Marseille</p>
             <p>Stade Velodrome</p>
         </div>
-        <div ref={refDivLast}>
+        <div>
             <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCA4IFNlcA%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24/et00312594-fgxlkplvmr-portrait.jpg"/>
             <p className="movieTitle">Pool A* New Zealand v France</p>
             <p>Stade de France: Saint-Denis</p>
         </div>
-    </div>
-        </>
+        </div>
+        </div>
     )
 }
