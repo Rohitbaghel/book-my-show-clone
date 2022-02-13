@@ -41,6 +41,7 @@ import {AiOutlineDown, AiOutlineRight} from "react-icons/ai";
                 </div>
                 {/* Language */}
                 {/* Generes */}
+                
                 <div className='my-10 bg-white px-4'>
                     <div className='flex justify-between'>
                         <div className='flex'>
