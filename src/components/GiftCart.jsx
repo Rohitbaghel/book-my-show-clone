@@ -1,5 +1,4 @@
-import React from 'react';
-import "./offer.css" 
+import React from 'react'; 
 export const GiftCart = () => {
     const image = [
         {
@@ -54,10 +53,10 @@ export const GiftCart = () => {
             <div style={{backgroundColor:"white",width:"80%",margin:"auto"}}> 
              <h2 style={{fontFamily:"inherit",marginTop:"25px",fontSize:"20px"} }>Pick a card from one themes</h2>
             <div style={{marginTop:"25px"}}>
-                <button className='btn' style={{height:"35px", width:"70px",color:"gray" ,borderRadius:"20px",border:"1px solid #CCCCCC",margin:"5px"}}>All</button>
-                <button className='btn' style={{height:"35px", width:"70px",color:"gray" ,borderRadius:"20px",border:"1px solid #CCCCCC",margin:"5px"}}>Generic</button>
-                <button className='btn' style={{height:"35px", width:"70px",color:"gray" ,borderRadius:"20px",border:"1px solid #CCCCCC",margin:"5px"}}>Occasion</button>
-                <button className='btn' style={{height:"35px", width:"70px",color:"gray" ,borderRadius:"20px",border:"1px solid #CCCCCC",margin:"5px"}}>Combos</button>
+                <button className='bg-slate-100 hover:bg-pink-600' style={{height:"35px", width:"70px",borderRadius:"20px",border:"1px solid #CCCCCC",margin:"5px"}}>All</button>
+                <button className='bg-slate-100 hover:bg-pink-600' style={{height:"35px", width:"70px",borderRadius:"20px",border:"1px solid #CCCCCC",margin:"5px"}}>Generic</button>
+                <button className='bg-slate-100 hover:bg-pink-600' style={{height:"35px", width:"70px",borderRadius:"20px",border:"1px solid #CCCCCC",margin:"5px"}}>Occasion</button>
+                <button className='bg-slate-100 hover:bg-pink-600' style={{height:"35px", width:"70px",borderRadius:"20px",border:"1px solid #CCCCCC",margin:"5px"}}>Combos</button>
             </div>
         <div className='images'>
             <div style={{width:"95%",margin:"auto",marginTop:"50px", display:"grid" , gridTemplateColumns:"auto auto auto auto"}}>
@@ -69,8 +68,12 @@ export const GiftCart = () => {
             </div>
         </div>
         </div>
-            </div>
-
+        </div>
+                <div style={{width:"80%",display:"flex",margin:"auto",justifyContent:"space-around",padding:"100px",color:"#EF4D5A"}}>
+                    <p>Terms & Conditions</p>
+                    <p>Need Help?</p>
+                    <p>Check Gift Card Balance</p>
+                </div>
     </div>
   </>
 };

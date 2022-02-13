@@ -1,5 +1,4 @@
-import React from "react";
-import "./offer.css"; 
+import React from "react"; 
 import { BsCreditCard2Back,BsCaretRightSquare,BsWallet2,BsTrophy} from "react-icons/bs";
 
 export const Offers = () => {
@@ -74,26 +73,26 @@ export const Offers = () => {
             <img src="Poster.png" alt="poster" />
           </div>
           <div className="offerfilter" style={{marginTop:"50px"}}>
-            <h3 style={{color:"gray"}}>FILTER OFFERS BY</h3>
+            <h3 style={{color:"gray",fontSize:"25px"}}>FILTER OFFERS BY</h3>
             <div className="btnDiv" style={{display:"flex", justifyContent:"center",marginTop:"40px"}}>
                <div className="o-btn" style={{width:"55px", height:"60px",padding:"3px" , margin:'0 10px', color:"gray",}}>
-                   <div  style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsCreditCard2Back style={{width:"100%",height:"80%"}}/></div>
+                   <div className="hover:bg-pink-600 hover:text-white" style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsCreditCard2Back style={{width:"100%",height:"80%"}}/></div>
                    <div style={{width:"100%",height:"20%",fontSize:"10px"}}>Credit Cart</div>
                </div> 
                <div className="o-btn" style={{ width:"55px", height:"60px",padding:"3px" , margin:'0 10px',color:"gray"}}>
-                   <div  style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsCreditCard2Back style={{width:"100%",height:"80%"}}/></div>
+                   <div className="hover:bg-pink-600 hover:text-white"  style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsCreditCard2Back style={{width:"100%",height:"80%"}}/></div>
                    <div style={{width:"100%",height:"20%",fontSize:"10px"}}>Debit Cart</div>
                </div>
                <div className="o-btn" style={{width:"55px", height:"60px",padding:"3px" , margin:'0 10px',color:"gray"}}>
-                   <div  style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsCaretRightSquare style={{width:"100%",height:"65%",marginTop:"3px"}}/></div>
+                   <div className="hover:bg-pink-600 hover:text-white" style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsCaretRightSquare style={{width:"100%",height:"65%",marginTop:"3px"}}/></div>
                    <div style={{width:"100%",height:"20%",fontSize:"10px"}}>BookMyShow</div>
                </div>
                <div className="o-btn" style={{width:"55px", height:"60px",padding:"3px" , margin:'0 10px',color:"gray"}}>
-                   <div  style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsWallet2 style={{width:"100%",height:"70%",marginTop:"3px"}}/></div>
+                   <div className="hover:bg-pink-600 hover:text-white" style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsWallet2 style={{width:"100%",height:"70%",marginTop:"3px"}}/></div>
                    <div style={{width:"100%",height:"20%",fontSize:"10px"}}>Wallet</div>
                </div>
                <div className="o-btn" style={{width:"55px", height:"60px",padding:"3px",color:"gray"}}>
-                   <div  style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsTrophy style={{width:"100%",height:"65%",marginTop:"3px"}}/></div>
+                   <div className="hover:bg-pink-600 hover:text-white " style={{width:"100%",height:"80%", border:"0.5px solid gray",borderRadius:"5px"}}><BsTrophy style={{width:"100%",height:"65%",marginTop:"3px"}}/></div>
                    <div style={{width:"100%",height:"20%",fontSize:"10px"}}>Rewards</div>
                </div>
             </div>
@@ -102,7 +101,7 @@ export const Offers = () => {
         <div className="lowerBox" style={{backgroundColor:"#F2F2F2"}}>
             <div style={{width:"70%",margin:"auto", display:"grid", gridTemplateColumns:"auto auto auto auto", marginTop:"50px"}}> 
                 {offerContainer.map((el) => {
-                return <div className="bank" style={{width:"90%",height:"90%",margin:"auto",border:"1px solid gray", borderRadius:"10px",backgroundColor:"white",textAlign:"center" }} > 
+                return <div className="hover:shadow-xl hover:shadow-gray-500/100" style={{width:"90%",height:"90%",margin:"auto",border:"1px solid gray", borderRadius:"10px",backgroundColor:"white",textAlign:"center" }} > 
                                 <div style={{height:"80%"}}>
                                     <img style={{height:"100%", width:"100%"}} src={el.img} alt="Banks"/>
                                 </div>
