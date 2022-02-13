@@ -58,14 +58,20 @@ export const ProductDetails = () => {
               </div>
             </div>
             <div className="flex my-2">
-              <div className="border text-black bg-white mr-2 px-2">{data?.screen_type?.[1].type ?? "3D"}</div>
+              <div className="border text-black bg-white mr-2 px-2">
+                {data?.screen_type?.[1].type ?? "3D"}
+              </div>
               <div className="border text-black bg-white px-4">
                 {data?.languages}
               </div>
             </div>
             <div className="text-white text-left my-2">
               <span className="mx-2">{data?.movie_duration}</span>
-              <span className='mx-1'>{data?.movie_genre?.[0]?.genre},&#32;{data?.movie_genre?.[1]?.genre},&#32;{data?.movie_genre?.[2]?.genre} </span>
+              <span className="mx-1">
+                {data?.movie_genre?.[0]?.genre},&#32;
+                {data?.movie_genre?.[1]?.genre},&#32;
+                {data?.movie_genre?.[2]?.genre}{" "}
+              </span>
               <span className="mx-2">{data?.movie_grade}</span>
               <span>{data?.release_date}</span>
             </div>
@@ -84,155 +90,155 @@ export const ProductDetails = () => {
           </div>
           {/* cast */}
           <div>
-            <p className='text-3xl font-bold my-8'>Cast</p>
-            <div className='grid grid-cols-6 gap-3'>
+            <p className="text-3xl font-bold my-8">Cast</p>
+            <div className="grid grid-cols-6 gap-3">
               <div>
                 <img
                   src={data?.cast?.[0]?.cast_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">
                   {data?.cast?.[0]?.original_name}
                 </p>
-                <p className='text-center mt-2'>{data?.cast?.[0]?.character}</p>
+                <p className="text-center mt-2">{data?.cast?.[0]?.character}</p>
               </div>
               <div>
                 <img
                   src={data?.cast?.[1]?.cast_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">
                   {data?.cast?.[1]?.original_name}
                 </p>
-                <p className='text-center mt-2'>{data?.cast?.[1]?.character}</p>
+                <p className="text-center mt-2">{data?.cast?.[1]?.character}</p>
               </div>
               <div>
                 <img
                   src={data?.cast?.[2]?.cast_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">
                   {data?.cast?.[2]?.original_name}
                 </p>
-                <p className='text-center mt-2'>{data?.cast?.[2]?.character}</p>
+                <p className="text-center mt-2">{data?.cast?.[2]?.character}</p>
               </div>
               <div>
                 <img
                   src={data?.cast?.[3]?.cast_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">
                   {data?.cast?.[3]?.original_name}
                 </p>
-                <p className='text-center mt-2'>{data?.cast?.[3]?.character}</p>
+                <p className="text-center mt-2">{data?.cast?.[3]?.character}</p>
               </div>
               <div>
                 <img
                   src={data?.cast?.[4]?.cast_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">
                   {data?.cast?.[4]?.original_name}
                 </p>
-                <p className='text-center mt-2'>{data?.cast?.[4]?.character}</p>
+                <p className="text-center mt-2">{data?.cast?.[4]?.character}</p>
               </div>
               <div>
                 <img
                   src={data?.cast?.[5]?.cast_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">
                   {data?.cast?.[5]?.original_name}
                 </p>
-                <p className='text-center mt-2'>{data?.cast?.[5]?.character}</p>
+                <p className="text-center mt-2">{data?.cast?.[5]?.character}</p>
               </div>
             </div>
           </div>
           {/* cast */}
           {/* Crew */}
-          <div className='my-8'>
-            <p className='text-3xl font-bold my-8'>Crew</p>
-            <div className='grid grid-cols-7 gap-3'>
+          <div className="my-8">
+            <p className="text-3xl font-bold my-8">Crew</p>
+            <div className="grid grid-cols-7 gap-3">
               <div>
                 <img
                   src={data?.crew?.[0]?.crew_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>{data?.crew?.[0]?.name}</p>
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">{data?.crew?.[0]?.name}</p>
+                <p className="text-center mt-2">
                   {data?.crew?.[0]?.crew_position}
                 </p>
               </div>
               <div>
                 <img
                   src={data?.crew?.[1]?.crew_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>{data?.crew?.[1]?.name}</p>
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">{data?.crew?.[1]?.name}</p>
+                <p className="text-center mt-2">
                   {data?.crew?.[1]?.crew_position}
                 </p>
               </div>
               <div>
                 <img
                   src={data?.crew?.[2]?.crew_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>{data?.crew?.[2]?.name}</p>
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">{data?.crew?.[2]?.name}</p>
+                <p className="text-center mt-2">
                   {data?.crew?.[2]?.crew_position}
                 </p>
               </div>
               <div>
                 <img
                   src={data?.crew?.[3]?.crew_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>{data?.crew?.[3]?.name}</p>
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">{data?.crew?.[3]?.name}</p>
+                <p className="text-center mt-2">
                   {data?.crew?.[3]?.crew_position}
                 </p>
               </div>
               <div>
                 <img
                   src={data?.crew?.[4]?.crew_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>{data?.crew?.[4]?.name}</p>
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">{data?.crew?.[4]?.name}</p>
+                <p className="text-center mt-2">
                   {data?.crew?.[4]?.crew_position}
                 </p>
               </div>
               <div>
                 <img
                   src={data?.crew?.[5]?.crew_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>{data?.crew?.[5]?.name}</p>
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">{data?.crew?.[5]?.name}</p>
+                <p className="text-center mt-2">
                   {data?.crew?.[5]?.crew_position}
                 </p>
               </div>
               <div>
                 <img
                   src={data?.crew?.[6]?.crew_image}
-                  alt=''
-                  className='w-full rounded-full'
+                  alt=""
+                  className="w-full rounded-full"
                 />
-                <p className='text-center mt-2'>{data?.crew?.[6]?.name}</p>
-                <p className='text-center mt-2'>
+                <p className="text-center mt-2">{data?.crew?.[6]?.name}</p>
+                <p className="text-center mt-2">
                   {data?.crew?.[6]?.crew_position}
                 </p>
               </div>
