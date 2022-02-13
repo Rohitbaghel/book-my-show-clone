@@ -9,7 +9,7 @@ import { Logout } from "./components/Logout";
 import { ProductDetails } from "./components/ProductDetails";
 import { Cinema } from "./components/Cinema";
 import { Play } from "./components/Play";
-import { Laughter } from "./components/laughterHome";
+import { Laughter } from "./components/Laughter";
 import { Food } from "./components/Food";
 import { GiftCart } from "./components/GiftCart";
 import { Offers } from "./components/Offers";
@@ -29,6 +29,7 @@ function App() {
         <Route path="/foods" element={<Food />}></Route>
         <Route path="/giftcarts" element={<GiftCart />}></Route>
         <Route path="/offers" element={<Offers />}></Route>
+        <Route path="/streams" element={<Laughter />}></Route>
       </Routes>
     </div>
   );

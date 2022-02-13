@@ -51,7 +51,7 @@ const NavLg = () => {
           setIsModelOpen(false);
         }}
       >
-        <div className="bg-white border mt-0 ">
+        <div className="bg-white border mt-0 w-full">
           <input
             type="text"
             placeholder="Search for Your City"
