@@ -206,24 +206,26 @@ const NavLg = () => {
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="bg-bms-700 p-4 mt-0">
-        <div className="md:hidden mt-0">
+    <div className="w-full" style={{ width: "100%" }}>
+      <nav className="bg-bms-700 p-4 mt-0 w-full">
+        <div className="md:hidden mt-0 w-full">
           {/* Mobile screen */}
           <NavSm />
         </div>
-        <div className="hidden md:flex lg:hidden mt-0">
+        <div className="hidden md:flex lg:hidden mt-0 w-full">
           {/* Medium/Tab screen */}
           <NavMd />
         </div>
-        <div className="hidden w-full lg:flex mt-0">
+        <div className="hidden w-full lg:flex mt-0 w-full">
           {/* Large screen */}
           <NavLg />
         </div>
-        <div className="flex justify-between bg-black text-white mt-0">
-          <div className="flex gap-2 mt-0">
+        <div className="flex justify-between bg-black text-white mt-0 w-full">
+          <div className="flex gap-6 mt-0">
             <div>
-              <Link to="/movies">Movie</Link>
+              <Link to="/movies" style={{ "margin-left": "20px" }}>
+                Movie
+              </Link>
             </div>
             <div>
               <Link to="/streams">Stream</Link>
@@ -234,29 +236,31 @@ const Navbar = () => {
             <div>
               <Link to="/play">Plays</Link>
             </div>
-            <div>
+            {/* <div>
               <Link to="/Sports">Sports</Link>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <Link to="/Activities">Activities</Link>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <Link to="/Buzz">Buzz</Link>
-            </div>
+            </div> */}
           </div>
 
-          <div className="flex gap-2">
-            <div>
+          <div className="flex gap-8 " style={{ "margin-right": "10px" }}>
+            {/* <div>
               <Link to="/ListYourShow">ListYourShow</Link>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <Link to="/Corporates">Corporates</Link>
+            </div> */}
+            <div>
+              <Link to="/offers">Offers</Link>
             </div>
             <div>
-              <Link to="/Offers">Offers</Link>
-            </div>
-            <div>
-              <Link to="/GiftCards">Gift Cards</Link>{" "}
+              <Link to="/giftcarts" style={{ "margin-right": "10px" }}>
+                Gift Cards
+              </Link>{" "}
             </div>
             {/* <div>
               <Link to="/login">Sign in</Link>{" "}
@@ -267,7 +271,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
