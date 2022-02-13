@@ -196,7 +196,7 @@ const Navbar = () => {
         <div className="hidden w-full lg:flex mt-0">
           {/* Large screen */}
           <NavLg />
-        </div>
+        </div> 
         <div className="flex justify-between bg-black text-white mt-0">
           <div className="flex gap-2 mt-0">
             <div>Movie</div>
