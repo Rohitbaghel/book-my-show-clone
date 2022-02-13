@@ -27,8 +27,8 @@ function App() {
       <ProductDetails />
       <Cinema /> */}
       <Laughter/>
-      <GiftCart/>
-      <Offers/>
+      {/* <GiftCart/>
+      <Offers/> */}
 
     </div>
   );
