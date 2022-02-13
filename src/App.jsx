@@ -10,6 +10,7 @@ import {Cinema} from "./components/Cinema";
 import {Laughter} from './components/Laughter'
 import {GiftCart} from './components/GiftCart'
 import {Offers} from './components/Offers'
+import {Play} from './components/Play'
 
 
 
@@ -26,9 +27,10 @@ function App() {
       <Movies />
       <ProductDetails />
       <Cinema /> */}
-      <Laughter/>
+      {/* <Laughter/> */}
       {/* <GiftCart/>
       <Offers/> */}
+      <Play/>
 
     </div>
   );
