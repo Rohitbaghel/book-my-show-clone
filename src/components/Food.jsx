@@ -37,23 +37,27 @@ export const Food = () => {
               Grab a <span className="text-2xl text-red-600">bite!</span>
             </h2>
             <p className="text-center">Prebook Your Meal and Save More!</p>
-            <div className="grid grid-cols-5 lg:mx-60">
-              <div>
+            <div className="flex lg:mx-60 gap-3  ">
+              <div className="ml-2">
                 <button className="border rounded-lg px-4 bg-red-600">
                   All
                 </button>
               </div>
-              <div>
+              <div className="ml-2">
                 <button className="border rounded-lg px-2 ">Combo</button>
               </div>
-              <div>
+              <div className="ml-2">
                 <button className="border rounded-lg px-2 ">Snack</button>
               </div>
               <div>
-                <button className="border rounded-lg px-2 ">Beverages</button>
+                <button className="border rounded-lg px-2 mr-15  w-full ">
+                  Beverages
+                </button>
               </div>
               <div>
-                <button className="border rounded-lg px-2 ">Popcorn</button>
+                <button className="border rounded-lg px-2 ml-2 w-full">
+                  Popcorn
+                </button>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-2">
