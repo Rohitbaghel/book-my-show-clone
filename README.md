@@ -179,3 +179,39 @@ We are very thankful for the support of my teammates and instructor for the comp
 [Twitter](https://twitter.com/Ranjank87465651)
 
 [Medium](https://medium.com/@ranjankumar1757/)
+
+- # Kamesh Hedau (fw12_255)
+![temp3-removebg-preview](https://user-images.githubusercontent.com/91541289/146794236-fbc208ad-50dd-480c-8db2-7e25db633c01.png)
+
+[Linkedin](www.linkedin.com/in/kamesh-hedau
+)
+
+[Twitter]()
+
+[Medium](https://medium.com/@kameshhedau19
+)
+
+- # Rohit Baghel ()
+![temp3-removebg-preview]()
+
+[Linkedin](
+)
+
+[Twitter]()
+
+[Medium]()
+
+- # Prakhar Bhalla ()
+![temp3-removebg-preview]()
+
+[Linkedin](
+)
+
+[Twitter]()
+
+[Medium]()
+
+
+
+
+
