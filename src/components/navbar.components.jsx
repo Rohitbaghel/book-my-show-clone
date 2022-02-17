@@ -10,7 +10,7 @@ import { FaUserCircle } from "react-icons/fa";
 Modal.setAppElement("#root");
 const NavSm = () => {
   return (
-    <div className="mt-0">
+    <div>
       <div className="text-white flex items-center justify-between ">
         <div>
           <h3 className="text-xl font-bold">It All starts Here!</h3>
@@ -146,14 +146,10 @@ const NavLg = () => {
           </div>
         </div>
       </Modal>
-      <div className="container -mt-2 px-4 flex items-center justify-between bg-black w-full">
+      <div className="container -mt-2 px-4 flex items-center justify-between  w-full">
         <div className="flex items-center w-2/3 gap-3">
-          <div className="w-12 h-12 ">
-            <img
-              src="https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png"
-              alt="logo"
-              className="w-full h-full"
-            />
+          <div className="w-40 h-11 m-0  ">
+            <img src="bookmyshow.png" alt="logo" className="w-full h-full" />
           </div>
           <div className="w-full flex items-center gap-3 bg-white px-3 py-2 rounded-md ml-10">
             <BiSearch className="ml-2" />
@@ -206,26 +202,30 @@ const NavLg = () => {
 
 const Navbar = () => {
   return (
-    <div className="w-full" style={{ width: "100%" }}>
-      <nav className="bg-bms-700 p-4 mt-0 w-full">
-        <div className="md:hidden mt-0 w-full">
-          {/* Mobile screen */}
-          <NavSm />
+    <div>
+      <nav className="bg-slate-700 w-full h-26">
+        <div className="p-3 ">
+          <div className="md:hidden mt-0 p-2">
+            {/* Mobile screen */}
+            <NavSm />
+          </div>
+          <div className="hidden md:flex lg:hidden mt-0 ">
+            {/* Medium/Tab screen */}
+            <NavMd />
+          </div>
+          <div className="hidden w-full lg:flex mt-0 ">
+            {/* Large screen */}
+            <NavLg />
+          </div>
         </div>
-        <div className="hidden md:flex lg:hidden mt-0 w-full">
-          {/* Medium/Tab screen */}
-          <NavMd />
-        </div>
-        <div className="hidden w-full lg:flex mt-0 w-full">
-          {/* Large screen */}
-          <NavLg />
-        </div>
-        <div className="flex justify-between bg-black text-white mt-0 w-full">
-          <div className="flex gap-6 mt-0">
+        <div className="flex justify-between bg-slate-900 h-11 w-full text-white ">
+          <div className="flex gap-7 ml-20 mt-2">
             <div>
-              <Link to="/movies" style={{ "margin-left": "20px" }}>
+              {/* <Link to="/movies" style={{ "margin-left": "20px" }}>
                 Movie
-              </Link>
+              </Link> */}
+
+              <Link to="/movies">Movie</Link>
             </div>
             <div>
               <Link to="/streams">Stream</Link>
@@ -247,7 +247,7 @@ const Navbar = () => {
             </div> */}
           </div>
 
-          <div className="flex gap-8 " style={{ "margin-right": "10px" }}>
+          <div className="flex gap-7 mr-20 mt-2">
             {/* <div>
               <Link to="/ListYourShow">ListYourShow</Link>
             </div> */}
@@ -258,9 +258,10 @@ const Navbar = () => {
               <Link to="/offers">Offers</Link>
             </div>
             <div>
-              <Link to="/giftcarts" style={{ "margin-right": "10px" }}>
+              {/* <Link to="/giftcarts" style={{ "margin-right": "10px" }}>
                 Gift Cards
-              </Link>{" "}
+              </Link>{" "} */}
+              <Link to="/giftcarts"> Gift Cards</Link>{" "}
             </div>
             {/* <div>
               <Link to="/login">Sign in</Link>{" "}

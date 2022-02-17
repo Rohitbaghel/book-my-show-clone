@@ -76,7 +76,7 @@ export const Offers = () => {
       <div>
         <Navbar />
       </div>
-      <div className="offer-cantainer">
+      <div className="offer-cantainer mt-5">
         <div className="upperBox" style={{ textAlign: "center" }}>
           <div className="poster" style={{ width: "80%", margin: "auto" }}>
             <img src="Poster.png" alt="poster" />

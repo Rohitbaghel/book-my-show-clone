@@ -22,13 +22,13 @@ export const Play = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container ">
         <div className="navbar">
           <Navbar />
         </div>
         <div
           style={{ backgroundColor: "#F5F4F4" }}
-          className="flex gap-5 mx-12"
+          className="flex gap-5 mx-12 mt-5"
         >
           <div className="w-2/6 ">
             <h4 className="text-2xl font-semibold">Filter</h4>
