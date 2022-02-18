@@ -135,7 +135,7 @@ export const Food = () => {
             </div>
           </div>
           <p>Show the m-ticket QR Code on your mobile to enter the cinema.</p>
-          <a href="http://localhost:4000">
+          <a href="https://paytmpaymenttest.herokuapp.com/">
             <button
               className="border px-8 text-2xl font-bold hover:bg-red-600"
               onClick={() => {
