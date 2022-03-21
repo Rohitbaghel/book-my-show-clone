@@ -194,6 +194,7 @@ We are very thankful for the support of my teammates and instructor for the comp
 )
 
 - # Rohit Baghel ()
+<img  width="200" height="240" src=  "https://avatars.githubusercontent.com/u/87422193?v=4" /> 
 ![]()
 
 [Linkedin](
